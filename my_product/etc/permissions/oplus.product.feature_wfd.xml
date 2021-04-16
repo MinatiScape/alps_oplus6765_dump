@@ -1,0 +1,6 @@
+<permissions>
+    <!-- OPLUS_FEATURE_WFD START -->
+    <!-- Add for MTK block multiuser WFD function -->
+    <feature name="oplus.multiuser.wfd.notsupport" />
+    <!-- OPLUS_FEATURE_WFD END -->
+</permissions>

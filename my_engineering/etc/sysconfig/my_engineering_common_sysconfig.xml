@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!--ZhaoJi.Yang@NW.DATA,2019/11/19,add for allow cu auto register to access hidden api since cu test request -->
+    <hidden-api-whitelisted-app package="com.mobiletools.systemhelper" />
+</config>

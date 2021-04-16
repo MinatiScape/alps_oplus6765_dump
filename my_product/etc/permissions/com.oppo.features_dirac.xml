@@ -1,0 +1,9 @@
+<!-- This file is used by Multimedia Daemon Service (YaJun.li).  DO NOT MODIFY. -->
+<permissions>
+    <!-- OPLUS_FEATURE_DIRAC START -->
+    <feature name="oppo.dirac.support" />
+    <feature name="oppo.soundeffect.support" />
+<!-- chenxu@PSW.MM.Dirac.Feature,2020/03/16,add for dirac2.0 -->
+    <feature name="oppo.dirac.support.version2"/>
+    <!-- OPLUS_FEATURE_DIRAC END -->
+</permissions>

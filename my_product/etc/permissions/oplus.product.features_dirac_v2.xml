@@ -1,0 +1,7 @@
+<oplus-config>
+    <!-- OPLUS_FEATURE_DOLBY -->
+    <oplus-feature name="oplus.software.audio.audioeffect_support"/>
+    <oplus-feature name="oplus.software.audio.dirac_support"/>
+    <oplus-feature name="oplus.software.audio.dirac_v2_support"/>
+    <!-- OPLUS_FEATURE_DOLBY END -->
+</oplus-config>

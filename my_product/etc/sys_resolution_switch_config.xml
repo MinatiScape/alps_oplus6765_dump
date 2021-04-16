@@ -1,0 +1,42 @@
+<!-- ForceFhd  表示在当前screenwidth下app显示有异常，需要强制调整到目标width  -->
+<!-- CompatFhd 名单使用 FHD+ -->
+<!-- oppo固定density的app不能添加到CompatFhd中  -->
+<!--Display Compat mode-->
+<sys_resolution_switch_config>
+<version>20200421</version>
+<!-- 配置该文件可以支持的竖屏时候屏幕宽度，目的是推送文件出现错误，如果1440的配置推送到1080后名单会失效  -->
+<screenwidth>720</screenwidth>
+<!-- scaleinfo格式 scale = 原宽度除目标宽度的值，ivnscale = 1除scale,density为整数值   -->
+<scaleinfo>1.5,0.6666666666667,320</scaleinfo>
+<!-- 智能分辨率配置格式-可以仅仅包含包名，也可以包名后包含 scale 信息 -->
+<!--  pkg,scale,invscale,density -->
+<CompatFhd>com.oppo.test</CompatFhd>  <!-- 例子1 -->
+<CompatFhd>com.oppo.text2,1.33333333334,0.75,360</CompatFhd>  <!-- 例子2  360=480*0.75-->
+<CompatFhd>com.imangi.templerun2</CompatFhd>  <!-- 神庙逃亡2 -->
+<CompatFhd>com.kiloo.subwaysurf</CompatFhd>  <!-- 地铁跑酷-->
+<CompatFhd>com.netease.dhxy.nearme.gamecenter,1.33333333334,0.75,360</CompatFhd>  <!-- 大话西游 -->
+<CompatFhd>com.cocos2d.fishingfun.nearme.gamecenter,1.33333333334,0.75,360</CompatFhd>
+<CompatFhd>org.cocos2d.fishingjoy3,1.33333333334,0.75,360</CompatFhd>
+<CompatFhd>org.cocos2dx.FishingJoy2,1.33333333334,0.75,360</CompatFhd>
+<CompatFhd>com.gbits.atm.nearme.gamecenter,1.33333333334,0.75,360</CompatFhd><!-- 问道 -->
+<CompatFhd>com.nextwave.wcc2</CompatFhd><!-- World Cricket Championship -->
+<CompatFhd>com.dts.freefireth</CompatFhd>
+<CompatFhd>com.mobile.legends</CompatFhd>
+<CompatFhd>com.ngame.allstar.eu</CompatFhd>
+<CompatFhd>com.garena.game.kgtw</CompatFhd>
+<CompatFhd>com.garena.game.kgvn</CompatFhd>
+<CompatFhd>com.netmarble.penta</CompatFhd>
+<CompatFhd>com.garena.game.kgth</CompatFhd>
+<CompatFhd>com.garena.game.kgsam</CompatFhd>
+<CompatFhd>com.garena.game.kgvntest</CompatFhd>
+<CompatFhd>com.garena.game.kgcn</CompatFhd>
+<CompatFhd>com.garena.game.kges</CompatFhd>
+<CompatFhd>com.garena.game.kgid</CompatFhd>
+<CompatFhd>com.netease.mc.m4399</CompatFhd><!-- 我的世界 -->
+<CompatFhd>com.netease.mc.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.tencent.tmgp.pubgmhd</CompatFhd>
+<CompatFhd>com.tencent.ig</CompatFhd>
+<CompatFhd>com.tencent.iglite</CompatFhd>
+<CompatFhd>com.tencent.tmgp.sgame</CompatFhd>
+</sys_resolution_switch_config>
+

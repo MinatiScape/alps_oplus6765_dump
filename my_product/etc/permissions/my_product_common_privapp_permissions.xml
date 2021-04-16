@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <!-- linjunzhou@Room.CommApp.KTMFM,2020/8/19 , Add for MTKFM app (move to priv-app block) -->
+    <privapp-permissions package="com.android.fmradio">
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
+        <permission name="android.permission.RECORD_AUDIO" />
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <permission name="android.permission.ACCESS_BROADCAST_RADIO" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    </privapp-permissions>
+</permissions>

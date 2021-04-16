@@ -1,0 +1,5 @@
+<oplus-config>
+  <!-- Haifeng.Zhu@ANDROID.BIOMETIRC, 2020/06/05, add for feature fingerprint_optical -->
+  <!--<oplus-feature name="oplus.software.fingeprint_optical_enabled"/>-->
+  <oplus-feature name="oplus.software.face_closeeye_detect"/>
+</oplus-config>

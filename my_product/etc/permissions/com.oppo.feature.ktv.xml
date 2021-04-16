@@ -1,0 +1,6 @@
+<permissions>
+    <!-- OPLUS_FEATURE_KTV START -->
+    <feature name="oppo.karaoke_v2.support" />
+    <feature name="oppo.karaoke_v2.pitchchange" />
+    <!-- OPLUS_FEATURE_KTV END -->
+</permissions>

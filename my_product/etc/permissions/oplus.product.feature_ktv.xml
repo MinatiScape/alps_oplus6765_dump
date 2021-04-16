@@ -1,0 +1,4 @@
+<oplus-config>
+    <oplus-feature name="oplus.software.audio.karaoke_v2.support"/>
+    <oplus-feature name="oplus.software.audio.karaoke_v2.pitchchange"/>
+</oplus-config>

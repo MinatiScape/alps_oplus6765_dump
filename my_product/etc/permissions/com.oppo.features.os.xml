@@ -1,0 +1,5 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+    <!-- Bing.Du@ANDROID.RESCONTROL 20200727, add for lite os-->
+    <feature name="oppo.sys.light.func" />
+</permissions>

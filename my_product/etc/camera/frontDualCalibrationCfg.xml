@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<CalibrationDefaultKeyValCount>12</CalibrationDefaultKeyValCount>
+<CalibrationDefaultKeyVal>"1152,864,800,600,944,708,0,0,0,0,-7.27,0"</CalibrationDefaultKeyVal>
+<CalibrationThreshold>"120,120,100,100,15000,15000,3,3,3,1.5,1.5,2.2"</CalibrationThreshold>
+
+<CircleBoardInfoCount>7</CircleBoardInfoCount>
+<CircleBoardInfo>"8,8,21.25,4,8,-2,5"</CircleBoardInfo>
+
+<DistortionInputParaCount>5</DistortionInputParaCount>
+<DistortionInputPara>"1,7,7,8,6"</DistortionInputPara>
+<SubDistortionInputPara>"1,7,7,8,6"</SubDistortionInputPara>
+
+<AlgorithmInnerThresholdCount>19</AlgorithmInnerThresholdCount>
+<AlgorithmInnerThreshold>"35,85,0.84,1.0,0.9,25.0,3500.0,15,1.0,15.0,15.0,0.44444444,0.66666667,3,0.43,0.4,0.8,0.25,0.3"</AlgorithmInnerThreshold>
+
+<!-----  end distance near far -->
+<VerifyThresholdCount>8</VerifyThresholdCount>
+<VerifyThreshold>"20,1.8,3.0,8.0,12,200,30,50"</VerifyThreshold>
+
+<calibrationInputParaCount>4</calibrationInputParaCount>
+<calibrationInputPara>"3,1,1,50"</calibrationInputPara>
+
+<!-----  optimize ratio lb ub-->
+<fOptRangeCount>4</fOptRangeCount>
+<fOptRange>"0.995,1.005,0.995,1.005"</fOptRange>
+
+<!-----  EFL,pixelSize,picW,picH-->
+<MainCamParamsCount>4</MainCamParamsCount>
+<MainCamParams>"1.72,0.001,2320,1744"</MainCamParams>
+
+<InputImagesFile>inputparam.xml</InputImagesFile>
+<OptT_Disable>1</OptT_Disable>
+<loglevel>15</loglevel>
+<dumpflag>0</dumpflag>
+<chartAngle>4</chartAngle>
+<CalibMode>1</CalibMode>
+<CalibChart>0</CalibChart>
+
+<statisticsFilePath>D:/OPPO_Data/DualCameraCalibReport.csv</statisticsFilePath>
+</opencv_storage>

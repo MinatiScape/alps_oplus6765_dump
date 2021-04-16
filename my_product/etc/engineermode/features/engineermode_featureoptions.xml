@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<features>
+    <!-- BSP feature -->
+    <feature name="com.oppo.eng.otg.support" />
+    <feature name="com.oppo.eng.sdcard.support" />
+    <feature name="com.oppo.eng.smallboard.detect.support" />
+    <feature name="com.oppo.eng.a.smallboard.detect.support" />
+    <feature name="com.oppo.eng.gyroscope.sensor.support" />
+    <feature name="com.oppo.eng.magnetic.sensor.support" />
+    <feature name="com.oppo.eng.gravity.sensor.calibrate.support" />
+    <feature name="com.oppo.eng.proximity.sensor.calibrate.support" />
+    <feature name="com.oppo.eng.proximity.distance.calibration.support" />
+    <feature name="com.oppo.eng.screen.light.sensor.support" />
+    <feature name="com.oppo.eng.light.sensor.calibrate.support" />
+    <feature name="com.oppo.eng.sensor.selftest.support" />
+    <feature name="com.oppo.eng.stepcounter.sensor.support" />
+    <feature name="com.oppo.eng.ship.mode.support" />
+
+    <!-- Network feature -->
+    <feature name="com.oppo.eng.sar.body" value="0.643" />
+    <feature name="com.oppo.eng.sar.head" value="1.045" />
+
+    <!-- Multimedia feature -->
+    <feature name="com.oppo.eng.smart.pa.calibrate.support" />
+    <!-- Connectivity feature -->
+
+    <!-- Android feature -->
+    <feature name="com.oppo.eng.exp.version" />
+    <!-- for Aging V1.3 -->
+    <feature name="com.oppo.eng.production.line.aging.new.support" />
+    <feature name="com.oppo.eng.navigation.bar.support" />
+    <feature name="com.oppo.eng.standlone.userdata.support" />
+    <feature name="com.oppo.eng.mtk.atm.mode.support" />
+
+    <!-- single battery normal -->
+    <feature name="com.oppo.eng.normal.battery.voltage.range" value="[3500,4550]"/>
+    <feature name="com.oppo.eng.normal.battery.temperate.range" value="[150,450]"/>
+    <feature name="com.oppo.eng.normal.charger.voltage.range" value="[4250,5500]"/>
+    <feature name="com.oppo.eng.normal.charge.current.range" value="(-2300,-500)"/>
+    <feature name="com.oppo.eng.normal.charge.current.slow.range" value="(-2300,-200)"/>
+    <feature name="com.oppo.eng.normal.charge.battery.level.range" value="[0,85)"/>
+
+</features>

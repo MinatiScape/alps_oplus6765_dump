@@ -1,0 +1,20 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<!-- COLOR_EDIT.  add oppo.screen.hovering.support ;remove oppo.narrow.frame -->
+<permissions>
+    <feature name="android.hardware.fingerprint" />
+    <feature name="oppo.back.touch.fingerprint.sensor" />
+    <!-- Enable Zero Touch Provisioning support. -->
+    <feature name="com.google.android.feature.ZERO_TOUCH" />
+    <!-- sumit.tiwary@APP.DocVault, 08/01/2020, Adding the feature check for DocVault -->
+    <feature name="oppo.docvault.support" />
+    <!-- Xiaofei.Gong@BSP.TP.Funtion, 2020/12/30, Add for blackgesture -->
+    <feature name="oppo.lcd.first.tp.last.support"/>
+    <!-- Wenfeng.Li@PSW.AD.OppoFeature.CommonSoft.0, 2018/07/02, Add for oppo market control by nvflag -->
+    <feature name="oppo.oppomarket.flaginstall"/>
+    <!-- ZhiYong@Plf.Framework, 2018/01/31, add for oppo freeform mode -->
+    <feature name="oppo.freeform.support" />
+    <!-- Wenfeng.Li@PSW.AD.OppoFeature.CommonSoft.1305784, 2018/03/07, Add for narrow bezel support -->
+    <feature name="oppo.narrow.bezel.support" />
+    <!-- Mingtian.Wu@Camera.Driver, 2021/03/12, add fingerprint shutter-->
+    <feature name="oppo.camera.fingerprint.shutter" />
+</permissions>

@@ -1,0 +1,11 @@
+on post-fs-data
+    mkdir /data/nandswap 0700 root root
+
+service init.oplus.nandswap.sh /system/bin/sh /product/bin/init.oplus.nandswap.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start init.oplus.nandswap.sh

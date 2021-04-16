@@ -1,0 +1,18 @@
+<oplus-config>
+    <!-- HanGaojun@MULTIMEDIA.DISPLAY.SERVICE, 2020/06/19, Add for display feature start -->
+    <!-- oplus-feature name="oplus.software.display.dcbacklight_support" /-->
+    <oplus-feature name="oplus.software.display.screen_gloablehbm_support" />
+    <!-- oplus-feature name="oplus.software.display.aod_support" /-->
+    <oplus-feature name="oplus.software.display.multibits_dimming_support" />
+    <oplus-feature name="oplus.software.display.autobrightctl_animation_support" />
+    <oplus-feature name="oplus.software.display.autolight_psensor_notsupport" />
+    <!--<oplus-feature name="oplus.software.fingeprint_optical_enabled" />-->
+    <oplus-feature name="oplus.software.display.screen_heteromorphism" />
+    <!-- oplus-feature name="oplus.software.display.aod_prevent_burn_support" /-->
+    <!-- HanGaojun@MULTIMEDIA.DISPLAY.SERVICE, 2020/06/19, Add for display feature end -->
+    <!-- ZhangMeilong@MM.AudioServer.effect, 2021/01/04 add for enable dirac bt effect feature -->
+    <oplus-feature name="oplus.software.audio.dirac.a2dp.support"/>
+    <!-- Meilong.Zhang@MULTIMEDIA.AUDIOserver.FEATURE, 2021/01/05 , Add for DUALHEADPHONE -->
+    <oplus-feature name="oplus.software.audio.dualheadphone"/>
+    <oplus-feature name="oplus.software.audio.dualheadphone.lite"/>
+</oplus-config>

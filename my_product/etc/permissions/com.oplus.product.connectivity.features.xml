@@ -1,0 +1,4 @@
+<oplus-config>
+    <!-- YangQing@CONNECTIVITY.WIFI.ARCHITECHURE, 2020/07/28   -->
+    <oplus-feature name="oplus.software.wlan.auto_reconnect" />
+</oplus-config>

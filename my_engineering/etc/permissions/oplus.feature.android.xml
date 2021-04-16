@@ -1,0 +1,7 @@
+<oplus-config>
+    <!-- GaoZhao@ANDROID.NOTIFICATION, 2020/07/27, Add for show notification toast -->
+    <oplus-feature name="oplus.software.notification.show_toast" />
+
+    <!--ZhiliangWu@ANDROID.DEBUG, 2020/09/14, Add for hiding logkit desktop icon -->
+    <oplus-feature name="oplus.software.logkit.hide_desktop_icon" />
+</oplus-config>

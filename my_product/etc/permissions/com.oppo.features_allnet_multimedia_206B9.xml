@@ -1,0 +1,18 @@
+
+<permissions>
+    <feature name="oppo.feature.206B9" />
+    <feature name="oppo.eyeprotect.support" />
+    <!--<feature name="oppo.autolight.userotate.support" />-->
+    <feature name="oppo.display.screen.gloablehbm.support" />
+    <feature name="oppo.multibits.dimming.support" />
+    <feature name="oppo.autobrightctl.animation.support" />
+    <!-- feature name="oppo.aod.support" /-->
+    <feature name="oppo.display.screen.underlightsensor.support" />
+    <feature name="oppo.display.dcbacklight.support" />
+    <feature name="oppo.autolight.psensor.notsupport" />
+    <!--<feature name="oppo.hardware.fingerprint.optical.support" />-->
+    <feature name="com.oppo.feature.screen.heteromorphism" />
+    <!-- feature name="oppo.aod.transparent" /-->
+    <feature name="oppo.multiuser.wfd.notsupport" />
+    <!-- feature name="oppo.aod.prevent.burn.support" /-->
+</permissions>

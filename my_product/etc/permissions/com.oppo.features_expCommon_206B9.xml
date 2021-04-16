@@ -1,0 +1,8 @@
+<!-- This file is used by Exp.  DO NOT MODIFY. -->
+
+<permissions>
+  <feature name="oppo.version.exp" />
+  <feature name="android.software.managed_users" />
+  <feature name="oppo.runtime.permission.alert.support" />
+
+</permissions>

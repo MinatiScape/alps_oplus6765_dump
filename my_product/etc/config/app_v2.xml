@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<app version="1.0">
+
+    <!-- http://doc.adc.com/sheets/onq7Mwxav9U4FmA9/MODOC -->
+    <disable pkg="com.coloros.sceneservice" priority="7"/>
+    <disable pkg="com.coloros.smartlock" priority="7"/>
+    <disable pkg="com.qualcomm.qti.simcontacts" priority="7"/>
+    <disable pkg="com.coloros.colordirectservice" priority="7"/>
+    <disable pkg="com.coloros.systemclone" priority="7"/>
+    <disable pkg="com.coloros.relax" priority="7"/>
+    <disable pkg="com.coloros.smartdrive" priority="7"/>
+    <disable pkg="com.coloros.directui" priority="7"/>
+    <!-- keep ocrscanner for Q update to R project -->
+    <!-- <disable pkg="com.coloros.ocrscanner" priority="7"/> -->
+    <disable pkg="com.coloros.shortcuts" priority="7"/>
+    <disable pkg="com.coloros.assistantscreen" priority="7"/>
+    <disable pkg="com.oppo.transmanager" priority="7"/>
+    <disable pkg="com.oppo.multimedia.pixelworks" priority="7"/>
+    <disable pkg="com.coloros.securitykeyboard" priority="7"/>
+    <disable pkg="com.coloros.favorite" priority="7"/>
+    <disable pkg="com.coloros.aicall" priority="7"/>
+    <disable pkg="com.google.android.accessibility.soundamplifier" priority="7"/>
+
+    <!-- http://doc.adc.com/sheets/SvWUVGw3LEAZtDI9/aBaaT -->
+    <disable pkg="com.coloros.support.services" priority="7"/>
+    <disable pkg="com.coloros.personalassistant" priority="7"/>
+    <disable pkg="com.redteamobile.roaming" priority="7"/>
+    <disable pkg="com.android.vendors.bridge.softsim" priority="7"/>
+    <disable pkg="com.coloros.scenemode" priority="7"/>
+
+    <!-- disable videoeditor for realme light os -->
+    <disable pkg="com.coloros.videoeditor" priority="7"/>
+
+    <!-- disable smartsidebar and floatassistant for PascalD(realme light os) -->
+    <disable pkg="com.coloros.smartsidebar" priority="7"/>
+    <disable pkg="com.coloros.floatassistant" priority="7"/>
+</app>

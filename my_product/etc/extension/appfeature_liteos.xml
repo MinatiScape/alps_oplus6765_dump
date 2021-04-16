@@ -1,0 +1,20 @@
+<extend_features>
+
+    <app_feature name="com.oplus.smartsidebar.default.off"/>
+    <app_feature name="com.oplus.floatassistant.single_view"/>
+    <app_feature name="com.oplus.floatassistant.assistive_ball_disable"/>
+    <app_feature name="com.oppo.launcher.LIVE_WALLPAPER_ENTRY_DISABLED"/>
+    <app_feature name="com.oppo.launcher.light_animator"/>"
+    <app_feature name="com.oppo.launcher.OVERLAY_DISABLED" />
+    <app_feature name="com.oppo.launcher.DRAW_MODE_APP_RANK_DISABLED" />"
+    <app_feature name="com.coloros.wallpapers.LIGHT_WEIGHT_OS_FUNC"/>
+    <app_feature name="com.android.wallpaper.livepicker.LIGHT_WEIGHT_OS_FUNC"/>
+    <app_feature name="com.android.systemui.apply_light_os_qs_tile"/>
+    <app_feature name="com.android.systemui.charge_lizi_anim_disable"/>
+    <app_feature name="com.android.systemui.gauss_blur_disabled"/>
+    <!-- <oplus-feature name="oplus.software.notification.envelope_assistant_enable" /> -->
+    <app_feature name="com.coloros.gamespace_package_share_notsupport" />
+    <app_feature name="com.coloros.gamespace_gameboard_notsupport" />
+    <app_feature name="com.coloros.gamespace_game_focus_mode_notsupport" />
+    <app_feature name="com.android.systemui.keep_swipup_gestures" />
+</extend_features>

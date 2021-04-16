@@ -1,0 +1,6 @@
+<oplus-config>
+    <!-- Wanghui@NETWORK.REG.8745, 2020/07/13, modify for Feature Toggle -->
+    <oplus-feature name="oplus.software.radio.air_interface_detect_support" />
+    <!--Qianli.Zhou@RM.NW.IMS.2653044, 2019/12/27 add feature by project-->
+    <oplus-feature name="oplus.software.radio.accelerate" />
+</oplus-config>

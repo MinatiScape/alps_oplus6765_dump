@@ -1,0 +1,7 @@
+<oplus-config>
+
+   <!-- Mashirong@ANDROID.MULTIUSER, 2020/12/08, add for ALM:647980 -->
+   <oplus-feature name="oplus.software.multiuser_entry_disabled"/>
+    <!-- Tonghu.Deng@ANDROID.UIFramework, 2020/6/23, Add for light os window animation -->
+    <oplus-feature name="oplus.software.windowanimaiton.light" />
+</oplus-config>

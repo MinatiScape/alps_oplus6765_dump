@@ -1,0 +1,95 @@
+{
+    "206B9":{
+        "platform_config":{
+            "sensor_arch":"mtk_sensor_arch_1_0"
+        },
+        "sensor_config":{
+            "android.sensor.accelerometer":{
+                "type":1,
+                "support":"true",
+                "module":"bma253|kx022|sc7a20",
+                "bma253":{
+                    "mode":"batch_cali|factory_cali",
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                },
+                "kx022":{
+                    "mode":"batch_cali|factory_cali",
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                },
+                "sc7a20":{
+                    "mode":"batch_cali|factory_cali",
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                }
+            },
+            "android.sensor.magnetic_field":{
+                "type":2,
+                "support":"true",
+                "module":"mmc5603|akm09915",
+                "mmc5603":{
+                    "mode":"batch_cali"
+                },
+                "akm09915":{
+                    "mode":"batch_cali"
+                }
+            },
+            "android.sensor.gyroscope":{
+                "type":4,
+                "support":"true",
+                "module":"bma253|kx022|sc7a20",
+                "bma253":{
+                    "mode":"batch_cali|factory_cali",
+                    "radian_threshold":0.05,
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                },
+                "kx022":{
+                    "mode":"batch_cali|factory_cali",
+                    "radian_threshold":0.05,
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                },
+                "sc7a20":{
+                    "mode":"batch_cali|factory_cali",
+                    "radian_threshold":0.05,
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                }
+            },
+            "android.sensor.proximity":{
+                "type":8,
+                "support":"true",
+                "module":"stk33502",
+                "stk33502":{
+                    "mode":"ignore_mean|micro_gap|factory_cali",
+                    "delta_threshold":150,
+                    "ps0_offset": 0,
+                    "ps0_distance_delta": 110,
+                    "ps1_offset": 0,
+                    "ps1_distance_delta": 0
+                }
+            },
+            "android.sensor.step_counter":{
+                "type":19,
+                "support":"true"
+            },
+            "android.sensor.light":{
+                "type":5,
+                "support":"true",
+                "module":"stk33502",
+                "stk33502":{
+                    "mode":"factory_cali",
+                    "cali_para": 1000
+                }
+            }
+        }
+    }
+}

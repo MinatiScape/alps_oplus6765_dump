@@ -1,0 +1,470 @@
+[
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.second.back.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.third.rear.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.fourth.rear.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.second.front.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.rear.single.flash.light.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.flash.light.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.second.rear.flash.light.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.third.rear.flash.light.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.fourth.rear.flash.light.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.ois.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.rear.ois_still.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.rear.ois_vibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.rear.ois_sr.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.ois.noise.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.third.rear.camera.ois.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.third.rear.ois_still.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.third.rear.ois_vibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.third.rear.ois_sr.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.eis.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.aperture.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.tof.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.tof.depth.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.tof.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.tof.verificate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.dual.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.dual.verificate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.front.dual.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.front.dual.verificate.suppor",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.flash.light.front.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.dual.single.cal.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.dual.single.ver.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.triple.single.cal.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.triple.single.ver.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.dual.cal.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.dual.ver.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.triple.cal.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.triple.ver.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.new.triple.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.new.triple.verificate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.laser.focus.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.pdaf.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.ae.sync.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.ob.verify.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.microscope.test.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.microscope.test.plan.preview.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.microscope.whiteboard.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.microscope.particle.detect.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.calibration.first.front.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "2304x1728"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.calibration.second.front.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "3264x2448"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.calibration.rear.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "4000x3000"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.calibrate.second.rear.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "2304x1728"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.calibrate.third.rear.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "4000x3000"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.portrait.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "4000x3000"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.aftersale.chart.size.array",
+        "Type": "Int32",
+        "Count": "4",
+        "Value": "295,475,785,965"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.dual.calibrate.aftersale.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.dual.calibrate.yuv.aftersale.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.arcsoft.dual.calibrate.aftersale.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.front.dualcam.calibrate.aftersale.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.triple.calibrate.aftersale.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.interference.video.support",
+        "Type": "Byte",
+        "Count": "40",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.rear.dual.calibrate.write.eeprom.support",
+        "Type": "Byte",
+        "Count": "87",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.calibration.performance",
+        "Type": "Byte",
+        "Count": "153",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.portrait.fullbody.support",
+        "Type": "Byte",
+        "Count": "155",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.state.verify.support",
+        "Type": "Byte",
+        "Count": "170",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.dump.hal.file.in.app.support",
+        "Type": "Byte",
+        "Count": "301",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.rear.main.sencond.thresholds",
+        "Type": "Byte",
+        "Count": "333",
+        "Value": "3.0,3.0,3.0,8.0,12.0,13.0,35.0,47.0"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.aftersale.rear.dual.calibration.use.goldenbin",
+        "Type": "Byte",
+        "Count": "387",
+        "Value": "1"
+    }
+]
