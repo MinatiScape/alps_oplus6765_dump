@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<virtualSpnOverridesByEfGid1 version="1">
+<virtualSpnOverride mccmncgid1="2343040" name="Virgin"/>
+<!--#ifdef OPLUS_BUG_COMPATIBILITY-->
+<!--XunYuan@NETWORK.IMS.1008644, 2021/03/12 ,GID to distinguish between virtual operators -->
+<virtualSpnOverride mccmncgid1="222880000000099" name="VERY"/>
+<virtualSpnOverride mccmncgid1="222990000000099" name="VERY"/>
+<virtualSpnOverride mccmncgid1="22288FFFFFFFFFF" name="WINDTRE"/>
+<!--#endif /*OPLUS_BUG_COMPATIBILITY*/-->
+</virtualSpnOverridesByEfGid1>
