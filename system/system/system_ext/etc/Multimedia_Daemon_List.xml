@@ -1,0 +1,2632 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<filter-conf>
+<version>20210125</version>
+<isOpen>true</isOpen>
+<filter-name>Multimedia_Daemon_List</filter-name>
+<ktv_whitelist>
+    <name>com.tencent.karaoke</name>
+    <attribute>true</attribute>
+
+    <name>cn.kuwo.player</name>
+    <attribute>false</attribute>
+
+    <name>com.changba</name>
+    <attribute>true</attribute>
+
+    <name>cn.banshenggua.aichang</name>
+    <attribute>true</attribute>
+
+    <name>com.kugou.android.ktvapp</name>
+    <attribute>true</attribute>
+
+    <name>com.duowan.mobile</name>
+    <attribute>true</attribute>
+
+    <name>com.duowan.kiwi</name>
+    <attribute>false</attribute>
+
+    <name>com.duowan.live</name>
+    <attribute>true</attribute>
+
+    <name>com.yy.huyaassist4game</name>
+    <attribute>true</attribute>
+
+    <name>air.tv.douyu.android</name>
+    <attribute>true</attribute>
+
+    <name>com.meelive.ingkee</name>
+    <attribute>true</attribute>
+
+    <name>com.huajiao</name>
+    <attribute>true</attribute>
+
+    <name>tv.xiaoka.live</name>
+    <attribute>true</attribute>
+
+    <name>com.ss.android.ugc.aweme</name>
+    <attribute>false</attribute>
+
+    <name>com.smile.gifmaker</name>
+    <attribute>false</attribute>
+
+    <name>com.starmakerinteractive.starmaker</name>
+    <attribute>true</attribute>
+
+    <name>com.smule.singandroid</name>
+    <attribute>true</attribute>
+
+    <name>com.windforce.android.suaraku</name>
+    <attribute>true</attribute>
+
+    <name>com.tencent.wesing</name>
+    <attribute>true</attribute>
+
+    <name>com.tencent.ibg.joox</name>
+    <attribute>true</attribute>
+
+    <name>sg.bigo.live</name>
+    <attribute>true</attribute>
+
+    <name>com.horadrim.android.sargam</name>
+    <attribute>true</attribute>
+</ktv_whitelist>
+
+<volume>
+    <name>com.tencent.tvoem</name>
+    <attribute>forbid</attribute>
+
+    <name>com.cdbabyjoy.ecepark</name>
+    <attribute>streammute</attribute>
+
+    <name>com.hifimusic.player</name>
+    <attribute>streammute</attribute>
+
+    <name>air.tv.douyu.android</name>
+    <attribute>no_need_mute_in_call</attribute>
+
+    <name>com.tencent.qqlive</name>
+    <attribute>no_need_mute_in_call</attribute>
+
+    <name>null</name>
+    <attribute>no_need_mute_in_ringing</attribute>
+
+    <name>com.smile.gifmaker</name>
+    <attribute>kill</attribute>
+
+    <name>com.coloros.findmyphone</name>
+    <attribute>permit</attribute>
+
+    <name>android.media.cts</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.systemui</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.settings</name>
+    <attribute>permit</attribute>
+
+    <name>com.ting.mp3.android</name>
+    <attribute>permit</attribute>
+
+    <name>com.youku.phone</name>
+    <attribute>permit</attribute>
+
+    <name>com.oppo.autotest.autotoolplatform</name>
+    <attribute>permit</attribute>
+
+    <name>com.coloros.speechassist</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.cts.deviceandprofileowner</name>
+    <attribute>permit</attribute>
+
+
+    <name>com.realme.link</name>
+    <attribute>permit</attribute>
+
+    <name>com.iflytek.inputmethod</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.bluetooth</name>
+    <attribute>permit</attribute>
+
+    <name>com.goldese.controlcenter</name>
+    <attribute>permit</attribute>
+
+    <name>com.huoshe.zzz.nearme.gamecenter</name>
+    <attribute>permit</attribute>
+
+    <name>com.martian.fzsj.nearme.gamecenter</name>
+    <attribute>permit</attribute>
+
+    <name>com.martian.gjggs.nearme.gamecenter</name>
+    <attribute>permit</attribute>
+
+    <name>com.martian.mnhx.nearme.gamecenter</name>
+    <attribute>permit</attribute>
+
+    <name>com.wb.cjhsz.nearme.gamecenter</name>
+    <attribute>permit</attribute>
+
+    <name>com.coloros.support.services</name>
+    <attribute>permit</attribute>
+
+    <name>com.huami.watch.hmwatchmanager</name>
+    <attribute>permit</attribute>
+
+    <name>com.huawei.health</name>
+    <attribute>permit</attribute>
+
+    <name>com.xiaomi.hm.health</name>
+    <attribute>permit</attribute>
+
+    <name>com.eg.android.AlipayGphone</name>
+    <attribute>permit</attribute>
+
+    <name>com.oppo.atlas</name>
+    <attribute>permit</attribute>
+
+    <name>com.heytap.speechassist</name>
+    <attribute>permit</attribute>
+
+    <name>com.coloros.shortcuts</name>
+    <attribute>permit</attribute>
+
+    <name>com.easytouch.assistivetouch</name>
+    <attribute>permit</attribute>
+
+    <name>com.ryeex.groot</name>
+    <attribute>permit</attribute>
+
+    <name>com.baidu.input</name>
+    <attribute>permit</attribute>
+
+    <name>com.tencent.qqpinyin</name>
+    <attribute>permit</attribute>
+
+    <name>com.coloros.gamespaceui</name>
+    <attribute>permit</attribute>
+
+    <name>com.realme.link</name>
+    <attribute>permit</attribute>
+
+    <name>com.oppo.sos</name>
+    <attribute>permit</attribute>
+</volume>
+
+<control>
+    <name>MultimediaService</name>
+    <attribute>true</attribute>
+
+    <name>setMode</name>
+    <attribute>true</attribute>
+
+    <name>recordConflict</name>
+    <attribute>false</attribute>
+
+    <name>streamAdjust</name>
+    <attribute>true</attribute>
+
+    <name>setspeakerphoneOn</name>
+    <attribute>true</attribute>
+
+    <name>killMediaserver</name>
+    <attribute>true</attribute>
+
+    <name>streamMute</name>
+    <attribute>true</attribute>
+
+    <name>killApp</name>
+    <attribute>true</attribute>
+
+    <name>backgroundKill</name>
+    <attribute>true</attribute>
+
+    <name>releaseAudiotrack</name>
+    <attribute>true</attribute>
+
+    <name>ScoOnSetSpeakerOff</name>
+    <attribute>true</attribute>
+
+    <name>setBluetoothScoOn</name>
+    <attribute>true</attribute>
+
+    <name>setMicrophoneMute</name>
+    <attribute>false</attribute>
+
+    <name>smartvolumeRing</name>
+    <attribute>true</attribute>
+
+    <name>setStreamVolume</name>
+    <attribute>true</attribute>
+
+    <name>trackRelease</name>
+    <attribute>false</attribute>
+
+    <name>checkSuspendException</name>
+    <attribute>true</attribute>
+
+    <name>multiThreadDecodeHeif</name>
+    <attribute>true</attribute>
+
+    <name>setRingerMode</name>
+    <attribute>true</attribute>
+
+    <name>startBluetoothSco</name>
+    <attribute>true</attribute>
+
+    <name>listenForeground</name>
+    <attribute>true</attribute>
+
+    <name>muteGameVolume</name>
+    <attribute>false</attribute>
+
+    <name>adspMTKRamdump</name>
+    <attribute>true</attribute>
+
+    <name>supportVoipEnhancement</name>
+    <attribute>true</attribute>
+
+    <name>audioserverAbort</name>
+    <attribute>true</attribute>
+
+    <name>customApiParamSet</name>
+    <attribute>true</attribute>
+
+    <name>defaultMicConfig</name>
+    <attribute>1</attribute>
+</control>
+
+<call-method-invalid>
+    <name>com.android.systemui</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.bluetooth</name>
+    <attribute>permit</attribute>
+
+    <name>com.coloros.safecenter</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.systemui</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.settings</name>
+    <attribute>permit</attribute>
+
+    <name>android.process.contacts</name>
+    <attribute>permit</attribute>
+
+    <name>system_server</name>
+    <attribute>permit</attribute>
+
+    <name>android.media.cts</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.cts.deviceandprofileowner</name>
+    <attribute>permit</attribute>
+
+    <name>com.android.server.telecom</name>
+    <attribute>permit</attribute>
+
+    <name>com.coloros.support.services</name>
+    <attribute>permit</attribute>
+
+    <name>com.xiaomi.hm.health</name>
+    <attribute>permit</attribute>
+
+    <name>com.huami.watch.hmwatchmanager</name>
+    <attribute>permit</attribute>
+
+    <name>com.coloros.speechassist</name>
+    <attribute>permit</attribute>
+
+    <name>com.veepoo.hband</name>
+    <attribute>permit</attribute>
+
+    <name>com.timaimee.hband</name>
+    <attribute>permit</attribute>
+
+    <name>com.coloros.shortcuts</name>
+    <attribute>permit</attribute>
+
+    <name>com.easytouch.assistivetouch</name>
+    <attribute>permit</attribute>
+
+    <name>com.realme.link</name>
+    <attribute>permit</attribute>
+</call-method-invalid>
+
+<permit-setspeakerphoneOn>
+    <name>com.viber.voip</name>
+    <attribute>null</attribute>
+</permit-setspeakerphoneOn>
+
+<speakerOff-in-scoOn>
+    <name>com.android.bluetooth</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.mm</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.mobileqq</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.mobileqq:video</name>
+    <attribute>null</attribute>
+
+    <name>com.whatsapp</name>
+    <attribute>null</attribute>
+
+    <name>com.zing.zalo</name>
+    <attribute>null</attribute>
+
+    <name>com.baidu.BaiduMap</name>
+    <attribute>null</attribute>
+
+    <name>com.facebook.orca</name>
+    <attribute>null</attribute>
+</speakerOff-in-scoOn>
+
+<google-default-logic>
+    <name>android.media.cts</name>
+    <attribute>null</attribute>
+
+    <name>com.android.cts.deviceandprofileowner</name>
+    <attribute>null</attribute>
+</google-default-logic>
+
+<number-define>
+    <name>checkPlaySilentTime1</name>
+    <attribute>180000</attribute>
+
+    <name>checkPlaySilentTime2</name>
+    <attribute>1800000</attribute>
+
+    <name>checkVoiceChatTime</name>
+    <attribute>5</attribute>
+</number-define>
+
+<sco-on-delay>
+    <name>com.tencent.mm</name>
+    <attribute>50</attribute>
+</sco-on-delay>
+
+<at-sampleRate>
+    <name>com.tencent.mobileqq</name>
+    <attribute>16000</attribute>
+</at-sampleRate>
+
+<disable-remoteplayer>
+    <name>com.bsb.hike</name>
+    <attribute>false</attribute>
+</disable-remoteplayer>
+
+<game-bt-noise>
+    <name>com.tencent.feiji</name>
+    <attribute>null</attribute>
+
+    <name>com.netease.my</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.tmgp.mhxy.sqsy</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.tmgp.pvz2</name>
+    <attribute>null</attribute>
+
+    <name>com.popcap.pvz2</name>
+    <attribute>null</attribute>
+</game-bt-noise>
+
+ <audiotrack-release>
+    <name>com.coloros.safecenter</name>
+    <attribute>null</attribute>
+
+    <name>com.android.systemui</name>
+    <attribute>null</attribute>
+
+    <name>com.android.settings</name>
+    <attribute>null</attribute>
+
+    <name>com.coloros.screenshot</name>
+    <attribute>null</attribute>
+
+    <name>android.process.contacts</name>
+    <attribute>null</attribute>
+
+    <name>system_server</name>
+    <attribute>null</attribute>
+</audiotrack-release>
+
+<donot-force-deepbuffer>
+    <name>com.tencent.mm</name>
+    <attribute>48000</attribute>
+
+    <name>com.tencent.mobileqq</name>
+    <attribute>44100</attribute>
+
+    <name>android.media.cts</name>
+    <attribute>null</attribute>
+
+    <name>com.viber.voip</name>
+    <attribute>null</attribute>
+
+    <name>com.imo.android.imoim</name>
+    <attribute>null</attribute>
+
+    <name>im.thebot.messenger</name>
+    <attribute>null</attribute>
+
+    <name>com.skype.rover</name>
+    <attribute>null</attribute>
+
+    <name>org.telegram.messenger</name>
+    <attribute>null</attribute>
+
+    <name>com.whatsapp</name>
+    <attribute>null</attribute>
+
+    <name>com.zing.zalo</name>
+    <attribute>null</attribute>
+
+    <name>jp.naver.line.android</name>
+    <attribute>null</attribute>
+
+    <name>com.facebook.orca</name>
+    <attribute>null</attribute>
+
+    <name>com.zhuoyue.yingyuyinbiaosucheng</name>
+    <attribute>null</attribute>
+
+    <name>com.waqu.android.vertical_yuju</name>
+    <attribute>null</attribute>
+
+    <name>com.edu24ol.newclass</name>
+    <attribute>null</attribute>
+
+    <name>com.zhuawa.carkemusi</name>
+    <attribute>null</attribute>
+
+    <name>com.hujiang.cctalk</name>
+    <attribute>null</attribute>
+
+    <name>com.waqu.android.general_aged</name>
+    <attribute>null</attribute>
+
+    <name>com.kaixin.android.vertical_3_maobizi</name>
+    <attribute>null</attribute>
+
+    <name>com.google.android.apps.maps</name>
+    <attribute>null</attribute>
+
+    <name>com.haochang.chunk</name>
+    <attribute>null</attribute>
+
+    <name>com.gamestar.perfectpiano</name>
+    <attribute>null</attribute>
+
+    <name>com.appscourt.english.urdu.roman.dictionary.offline</name>
+    <attribute>null</attribute>
+
+    <name>com.google.android.tts</name>
+    <attribute>null</attribute>
+
+    <name>com.king.candycrushsaga</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.karaoke</name>
+    <attribute>null</attribute>
+
+    <name>cn.kuwo.player</name>
+    <attribute>null</attribute>
+
+    <name>com.changba</name>
+    <attribute>null</attribute>
+
+    <name>cn.banshenggua.aichang</name>
+    <attribute>null</attribute>
+
+    <name>com.kugou.android.ktvapp</name>
+    <attribute>null</attribute>
+
+    <name>com.duowan.mobile</name>
+    <attribute>null</attribute>
+
+    <name>com.duowan.kiwi</name>
+    <attribute>null</attribute>
+
+    <name>com.duowan.live</name>
+    <attribute>null</attribute>
+
+    <name>com.yy.huyaassist4game</name>
+    <attribute>null</attribute>
+
+    <name>air.tv.douyu.android</name>
+    <attribute>null</attribute>
+
+    <name>com.meelive.ingkee</name>
+    <attribute>null</attribute>
+
+    <name>com.huajiao</name>
+    <attribute>null</attribute>
+
+    <name>tv.xiaoka.live</name>
+    <attribute>null</attribute>
+
+    <name>com.starmakerinteractive.starmaker</name>
+    <attribute>null</attribute>
+
+    <name>com.smule.singandroid</name>
+    <attribute>null</attribute>
+
+    <name>com.windforce.android.suaraku</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.wesing</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.ibg.joox</name>
+    <attribute>null</attribute>
+
+    <name>sg.bigo.live</name>
+    <attribute>null</attribute>
+
+    <name>com.horadrim.android.sargam</name>
+    <attribute>null</attribute>
+</donot-force-deepbuffer>
+
+<donot-force-direct>
+    <name>mini.block.craft.free.mc</name>
+    <attribute>null</attribute>
+
+    <name>com.oppo.transmanager</name>
+    <attribute>null</attribute>
+
+    <name>com.oppo.transrx</name>
+    <attribute>null</attribute>
+
+    <name>com.coloros.video</name>
+    <attribute>null</attribute>
+</donot-force-direct>
+
+<imapp-change-mode>
+    <name>com.viber.voip</name>
+    <attribute>null</attribute>
+
+    <name>com.imo.android.imoim</name>
+    <attribute>null</attribute>
+
+    <name>im.thebot.messenger</name>
+    <attribute>null</attribute>
+
+    <name>com.skype.rover</name>
+    <attribute>null</attribute>
+
+    <name>org.telegram.messenger</name>
+    <attribute>null</attribute>
+
+    <name>com.whatsapp</name>
+    <attribute>null</attribute>
+
+    <name>com.zing.zalo</name>
+    <attribute>null</attribute>
+
+    <name>jp.naver.line.android</name>
+    <attribute>null</attribute>
+
+    <name>com.facebook.orca</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.mm</name>
+    <attribute>null</attribute>
+
+    <name>com.tencent.mobileqq</name>
+    <attribute>null</attribute>
+</imapp-change-mode>
+
+<fast-audio-effects>
+    <name>com.gamestar.perfectpiano</name>
+    <attribute>0</attribute>
+    <name>com.cmplay.tiles2_cn</name>
+    <attribute>0</attribute>
+    <name>com.superpowered.superpoweredlatency</name>
+    <attribute>0</attribute>
+    <name>org.chromium.latency.walt</name>
+    <attribute>0</attribute>
+    <name>com.tencent.tmgp.tiles2</name>
+    <attribute>0</attribute>
+    <name>com.cmplay.tiles2_cn</name>
+    <attribute>0</attribute>
+    <name>com.EvilChaotic.ModernWarplanes</name>
+    <attribute>0</attribute>
+
+    <name>com.tencent.tmgp.sgame</name>
+    <attribute>1</attribute>
+    <name>com.tencent.tmgp.pubgmhd</name>
+    <attribute>1</attribute>
+    <name>com.tencent.tmgp.cf</name>
+    <attribute>1</attribute>
+    <name>com.tencent.tmgp.dwrg</name>
+    <attribute>1</attribute>
+    <name>com.netease.hyxd.nearme.gamecenter</name>
+    <attribute>1</attribute>
+    <name>com.netease.hyxd</name>
+    <attribute>1</attribute>
+    <name>com.netease.ko</name>
+    <attribute>1</attribute>
+    <name>com.ngame.allstar.eu</name>
+    <attribute>1</attribute>
+    <name>com.tencent.ig</name>
+    <attribute>1</attribute>
+    <name>com.dts.freefireth</name>
+    <attribute>1</attribute>
+
+    <name>com.tencent.tmgp.pubgm</name>
+    <attribute>2</attribute>
+    <name>com.wedobest.paino.near.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.wb.gqfk.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.lew.gamepianoblock.nearme.gameceter</name>
+    <attribute>2</attribute>
+    <name>com.gangqindaren.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.ftaro.music.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.yifeng.paino.nearme.gamcenter</name>
+    <attribute>2</attribute>
+    <name>game.piano.black.tiles.music</name>
+    <attribute>2</attribute>
+    <name>com.tencent.qqlive</name>
+    <attribute>2</attribute>
+    <name>com.tencet.game.rhythmmaster</name>
+    <attribute>2</attribute>
+    <name>com.eyu.piano</name>
+    <attribute>2</attribute>
+    <name>org.mozilla.firefox</name>
+    <attribute>2</attribute>
+    <name>com.popcap.pvz2cthdop</name>
+    <attribute>2</attribute>
+    <name>com.supercell.clashroyale.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.carrot3</name>
+    <attribute>2</attribute>
+    <name>com.carrot.carrotfantasy</name>
+    <attribute>2</attribute>
+    <name>com.carrot.iceworld</name>
+    <attribute>2</attribute>
+    <name>com.popcap.pvz2op</name>
+    <attribute>2</attribute>
+    <name>com.jd.game.onetfruit.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.wesix</name>
+    <attribute>2</attribute>
+    <name>com.tencent.king.candycrushsaga</name>
+    <attribute>2</attribute>
+    <name>net.peakgames.amycn</name>
+    <attribute>2</attribute>
+    <name>com.pdragon.tetris</name>
+    <attribute>2</attribute>
+    <name>tgame.cc.tetris6.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.jd.game.fruitsmasher.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.wedobest.piano.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.hero.sm.nearme.gamecenter</name>
+    <attribute>2</attribute>
+
+    <name>com.cig.themonsterchef.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.ea.android.chs.nbamobile.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.zengame.wltq.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.yodo1.ctr2.OPPO_01</name>
+    <attribute>2</attribute>
+    <name>com.cottongame.isoland2.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.fingersoft.hrc2.cn.noncmcc.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.shandagames.falloutshelter.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.yodo1.OPPO_01.SkiSafari</name>
+    <attribute>2</attribute>
+    <name>com.wyd.hero.yqlfc.cb1.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.ztgame.jl.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.galasports.basketball.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.game.SSGame</name>
+    <attribute>2</attribute>
+    <name>com.racergame.cityracing3d</name>
+    <attribute>2</attribute>
+    <name>com.fingersoft.hillclimb.cn.noncmcc</name>
+    <attribute>2</attribute>
+    <name>com.tencent.woool3d</name>
+    <attribute>2</attribute>
+    <name>com.shenghe.wzcq.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.miHoYo.bh3.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.zlongame.fzdl.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.kingnet.gundam.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.skymoons.hqg.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.onmyoji.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.blizzard.wtcg.hearthstone</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.kof98</name>
+    <attribute>2</attribute>
+    <name>net.crimoon.pm.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.pocketmon.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.my.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.dhxy.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.crossgate</name>
+    <attribute>0</attribute>
+    <name>com.sy.xljx.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.supercell.clashofclans.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.supercell.boombeach.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.sgqyz</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.zlong</name>
+    <attribute>2</attribute>
+    <name>com.tencent.cqsj</name>
+    <attribute>2</attribute>
+    <name>com.game.sgz.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.regin.gcld.oppo.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.jedigames.p16s.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.hlddz.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.zstarpoker.ddz.ss.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.mewe.wolf</name>
+    <attribute>2</attribute>
+    <name>com.hegu.dnl.oppo.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.game.VXDGame</name>
+    <attribute>2</attribute>
+    <name>com.enjoymisgzj.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.games.hc.acing.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.haoxin.ultramanyxcs.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.huale.justicearrive.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.boxoff.king.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.mojang.minecraftpe</name>
+    <attribute>2</attribute>
+    <name>com.joym.bearfarm.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.pokercity.bydrqp.googleplay</name>
+    <attribute>2</attribute>
+    <name>com.leiting.gumballs.leiting</name>
+    <attribute>2</attribute>
+    <name>com.netease.pes.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.hoolai.wdhmzqfy.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.gaea.shanhai.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.dwrg.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.ztgame.bob</name>
+    <attribute>2</attribute>
+    <name>com.wepie.snake.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.cmcm.arrowio_cn.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.bairimeng.snake.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.outfit7.talkingtompool.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.soulgame.slithersg.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.lz.wcdzz.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.ddtank</name>
+    <attribute>2</attribute>
+    <name>com.ball3d.union.keke.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.tom.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.bf.xkfyzol.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.jdangame.cqll.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.pokercity.bydrqp.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.jjhgame.gf.iapppay</name>
+    <attribute>2</attribute>
+    <name>com.leqi.buyu2.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>fish.soonyo.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.leqi.buyu.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.yaoji.byhlz.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>org.cocos2d.fishingjoy3</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.bydrtx</name>
+    <attribute>2</attribute>
+    <name>com.ikoalabear.x5online.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.ddianle.lovedance.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.ma59.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.ttx5.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.kiloo.subwaysurf</name>
+    <attribute>2</attribute>
+    <name>com.tencent.pao</name>
+    <attribute>2</attribute>
+    <name>com.joym.bearforward.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftDMCN</name>
+    <attribute>2</attribute>
+    <name>com.joym.xiongdakuaipao2018.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.joym.xiongdakuaipao</name>
+    <attribute>2</attribute>
+    <name>com.ubisoft.rabbidsrunner.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.hq.Ultramancszzdd.nearme.gamecenter</name>
+    <attribute>2</attribute>
+
+    <name>com.mahjong.sichuang</name>
+    <attribute>2</attribute>
+    <name>com.xianlai.mahjonghainan</name>
+    <attribute>2</attribute>
+    <name>com.qyqp.hn</name>
+    <attribute>2</attribute>
+    <name>com.happyplay.scmj</name>
+    <attribute>2</attribute>
+    <name>com.LuZhouYuLe.MixProject</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.ttmj</name>
+    <attribute>2</attribute>
+    <name>xze.ccmj.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>weile.nanchangmj.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.majiang.dgz</name>
+    <attribute>2</attribute>
+    <name>com.qs.xy.xyqp.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.mahjong.danji.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>weile.ftmj.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.minitech.miniworld.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.mc.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.zjz2.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.cldts</name>
+    <attribute>2</attribute>
+    <name>com.dygame.hyqs.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.easymobi.plagueinc.oppo</name>
+    <attribute>2</attribute>
+    <name>com.glutenfreegames.snowleopardsmulatorgames</name>
+    <attribute>2</attribute>
+    <name>com.hxjy.union.keke.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.crisisfire.android.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.wooduan.ssjj.nearme.gamecenter</name>
+    <attribute>2</attribute>
+
+    <name>com.qzyx2.union.keke.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.cmcm.killshotbravo.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.nidong.cmswat.nearme.gamecenter</name>
+    <attribute>2</attribute>
+
+    <name>com.netease.frxy.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.netease.moba.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tq.he.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.yinhan.skzh.nearme.gamecenter</name>
+    <attribute>2</attribute>
+
+    <name>com.wali.xmcs.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.gsdzz.union.keke.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.dw.fff2.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.dianhun.xgame.lvs.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.mobile.legends</name>
+    <attribute>2</attribute>
+
+    <name>com.supercell.brawlstars</name>
+    <attribute>2</attribute>
+    <name>com.fungames.sniper3d</name>
+    <attribute>2</attribute>
+    <name>com.titan.cda.gb</name>
+    <attribute>2</attribute>
+    <name>com.criticalforceentertainment.criticalops</name>
+    <attribute>2</attribute>
+    <name>com.futureplay.battleground</name>
+    <attribute>2</attribute>
+
+    <name>com.polyplayinc.combatassault</name>
+    <attribute>2</attribute>
+    <name>com.tridentstudio.seagame</name>
+    <attribute>2</attribute>
+    <name>com.axlebolt.standoff2</name>
+    <attribute>2</attribute>
+    <name>com.onetongames.rocketroyale</name>
+    <attribute>2</attribute>
+    <name>com.gameinsight.gobandroid</name>
+    <attribute>2</attribute>
+    <name>com.dle.respawnables</name>
+    <attribute>2</attribute>
+    <name>com.pixel.gun3d</name>
+    <attribute>2</attribute>
+    <name>com.mobirix.zombieking</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftM5HM</name>
+    <attribute>2</attribute>
+    <name>com.supercell.clashofclans</name>
+    <attribute>2</attribute>
+    <name>com.supercell.clashroyale</name>
+    <attribute>2</attribute>
+    <name>com.byril.seabattle2</name>
+    <attribute>2</attribute>
+    <name>com.madfingergames.legends</name>
+    <attribute>2</attribute>
+    <name>com.supervilmegacorp.game</name>
+    <attribute>2</attribute>
+    <name>com.SevenBulls.CounterAttackShooter</name>
+    <attribute>2</attribute>
+    <name>com.madfingergames.unkilled</name>
+    <attribute>2</attribute>
+    <name>com.topactiongames.frontline.battle.game.royale.strike</name>
+    <attribute>2</attribute>
+    <name>com.netmarble.starwars</name>
+    <attribute>2</attribute>
+    <name>com.netease.chiji</name>
+    <attribute>2</attribute>
+    <name>com.tancent.warwings2</name>
+    <attribute>2</attribute>
+    <name>com.mgs.sniper1</name>
+    <attribute>2</attribute>
+    <name>com.spirit.commando.war.action.apps</name>
+    <attribute>2</attribute>
+    <name>com.badflyinteractive.deadeffect2</name>
+    <attribute>2</attribute>
+    <name>com.glu.deerhunt2</name>
+    <attribute>2</attribute>
+    <name>com.sega.gunstar.classic</name>
+    <attribute>2</attribute>
+    <name>com.squareenixmontreal.hitmansniperandroid</name>
+    <attribute>2</attribute>
+    <name>com.pikpok.dr2.play</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftNOHM</name>
+    <attribute>2</attribute>
+    <name>pl.idreams.SkyForceReloaded2016</name>
+    <attribute>2</attribute>
+    <name>com.agaming.thesun.origin</name>
+    <attribute>2</attribute>
+    <name>com.antiterrorism.shooter.as</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftFWHM</name>
+    <attribute>2</attribute>
+    <name>com.wjp.zombie</name>
+    <attribute>2</attribute>
+    <name>com.xlei.zombiekillerdeadsnipershooting3d</name>
+    <attribute>2</attribute>
+    <name>com.yx.sniperkiller</name>
+    <attribute>2</attribute>
+    <name>com.glu.zbs</name>
+    <attribute>2</attribute>
+    <name>com.hitrock.hideonline</name>
+    <attribute>2</attribute>
+    <name>com.titan.cd.gb</name>
+    <attribute>2</attribute>
+    <name>com.nordcurrent.sniperarena</name>
+    <attribute>2</attribute>
+
+    <name>com.madfingergames.deadtrigger2</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftSXHM</name>
+    <attribute>2</attribute>
+    <name>com.xs.armysniper</name>
+    <attribute>2</attribute>
+    <name>com.tbegames.and.zombie_shooter</name>
+    <attribute>2</attribute>
+    <name>com.hotheadgames.google.free.rawsniper</name>
+    <attribute>2</attribute>
+    <name>com.sidheinteractive.sif.DR</name>
+    <attribute>2</attribute>
+    <name>air.com.FDGEntertainment.Lonewolf.gp</name>
+    <attribute>2</attribute>
+    <name>com.miniclip.bowmasters</name>
+    <attribute>2</attribute>
+    <name>com.glu.deerhunt16</name>
+    <attribute>2</attribute>
+    <name>com.junesoftware.maskgun</name>
+    <attribute>2</attribute>
+    <name>com.JESoftware.LastHopeSniperWar</name>
+    <attribute>2</attribute>
+
+    <name>com.woodensword.zombie</name>
+    <attribute>2</attribute>
+    <name>com.specialcombatops.moderncounterattack.shootinggame</name>
+    <attribute>2</attribute>
+    <name>com.hts.ams</name>
+    <attribute>2</attribute>
+    <name>invaders.os.galaxy.space.shooter.attack.classic</name>
+    <attribute>2</attribute>
+    <name>com.sevenpirates.infinitywar</name>
+    <attribute>2</attribute>
+    <name>com.elex.callofduty.gp</name>
+    <attribute>2</attribute>
+    <name>com.STJGames.battleofbullet</name>
+    <attribute>2</attribute>
+    <name>com.gamedevltd.destinywarfare</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.cfmnac</name>
+    <attribute>2</attribute>
+    <name>com.foursakenmedia.noblemen</name>
+    <attribute>2</attribute>
+    <name>com.herogame.gplay.theoutlived</name>
+    <attribute>2</attribute>
+    <name>com.nekki.shadowfight3</name>
+    <attribute>2</attribute>
+    <name>com.horus.bulletstrike</name>
+    <attribute>2</attribute>
+    <name>com.cigames.sgwm</name>
+    <attribute>2</attribute>
+    <name>com.thumsoft.warrobots.cityrescue.mission</name>
+    <attribute>2</attribute>
+    <name>com.tapination.ams.shooting</name>
+    <attribute>2</attribute>
+    <name>com.mobicle.sf2.th</name>
+    <attribute>2</attribute>
+    <name>com.gs5.cfm</name>
+    <attribute>2</attribute>
+
+    <name>com.nexon.pbs</name>
+    <attribute>2</attribute>
+    <name>com.counter.terrorism.shoot.doing</name>
+    <attribute>2</attribute>
+    <name>com.gamefeast.battle.unknown.players.survival.shooting.game</name>
+    <attribute>2</attribute>
+    <name>com.feelingtouch.strikeforce2</name>
+    <attribute>2</attribute>
+    <name>com.timuzgames.missioncounterattack</name>
+    <attribute>2</attribute>
+    <name>com.fighting_games.shoot.war.strike</name>
+    <attribute>2</attribute>
+    <name>com.appsomniacs.da2</name>
+    <attribute>2</attribute>
+    <name>com.playappking.ametalsoldiers2</name>
+    <attribute>2</attribute>
+    <name>net.wargaming.wot.blitz</name>
+    <attribute>2</attribute>
+    <name>com.generamobile.zhunter.gp</name>
+    <attribute>2</attribute>
+    <name>zombie.survival.craft.z</name>
+    <attribute>2</attribute>
+    <name>com.alien.shooter.galaxy.attack</name>
+    <attribute>2</attribute>
+    <name>com.play.dino.jurassic.world.app</name>
+    <attribute>2</attribute>
+    <name>com.alanapps.standoff</name>
+    <attribute>2</attribute>
+    <name>com.mad.gunz</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftINHM</name>
+    <attribute>2</attribute>
+    <name>com.chillingo.warfriends.android.gplay</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftM4HM</name>
+    <attribute>2</attribute>
+    <name>com.selvas.fr</name>
+    <attribute>2</attribute>
+    <name>com.critical.strike2</name>
+    <attribute>2</attribute>
+    <name>com.chillingo.tinytroopers2.android.rowgplay</name>
+    <attribute>2</attribute>
+    <name>com.dle.afterpulse</name>
+    <attribute>2</attribute>
+    <name>com.vicenter.knifehit3d</name>
+    <attribute>2</attribute>
+    <name>com.mimiclip.footballstrike</name>
+    <attribute>2</attribute>
+    <name>and.onemt.war.ar</name>
+    <attribute>2</attribute>
+    <name>com.tap4fun.reignofwar.androidme</name>
+    <attribute>2</attribute>
+    <name>com.babil.androidpanzer</name>
+    <attribute>2</attribute>
+    <name>com.igg.android.lordsmobile</name>
+    <attribute>2</attribute>
+    <name>com.igg.android.conquerors</name>
+    <attribute>2</attribute>
+    <name>com.hcg.cok.gp</name>
+    <attribute>2</attribute>
+    <name>com.and.riseofthekings</name>
+    <attribute>2</attribute>
+    <name>com.longtech.lastwars.gp</name>
+    <attribute>2</attribute>
+    <name>com.mobirix.throwball</name>
+    <attribute>2</attribute>
+    <name>com.more.dayzsurvival.gp</name>
+    <attribute>2</attribute>
+    <name>game.bubble.shooter.dragon.pop</name>
+    <attribute>2</attribute>
+    <name>com.herogames.gplay.crisisactionsa</name>
+    <attribute>2</attribute>
+    <name>com.lf.sniper.gun.shooter.free.apps</name>
+    <attribute>2</attribute>
+    <name>com.hazar.fps</name>
+    <attribute>2</attribute>
+    <name>com.ninjakiwi.sas3zombieassault</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftSIHM</name>
+    <attribute>2</attribute>
+    <name>com.yx.sniper</name>
+    <attribute>2</attribute>
+    <name>com.wordsmobile.gunship</name>
+    <attribute>2</attribute>
+    <name>com.theonegames.gunshipbattle</name>
+    <attribute>2</attribute>
+    <name>com.KillerBeanStudios.KillerBeanUnleashed</name>
+    <attribute>2</attribute>
+    <name>com.doodlemobile.vicecity</name>
+    <attribute>2</attribute>
+    <name>com.netease.hyxdtw</name>
+    <attribute>2</attribute>
+    <name>com.dkgame.gplay.crisisactiontw</name>
+    <attribute>2</attribute>
+    <name>com.airfightwar.thunderbattle</name>
+    <attribute>2</attribute>
+    <name>com.mobirix.shotingking</name>
+    <attribute>2</attribute>
+    <name>archery.elite.shooting.free.game.android</name>
+    <attribute>2</attribute>
+    <name>com.sportgames.shooting.archery.free</name>
+    <attribute>2</attribute>
+    <name>com.fun.games.commando.black.shadow</name>
+    <attribute>2</attribute>
+    <name>com.timuzsolutions.unfinishedmission</name>
+    <attribute>2</attribute>
+    <name>com.glu.mi5</name>
+    <attribute>2</attribute>
+    <name>com.tencet.ig</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.andriod.ANMP.GloftFWHM</name>
+    <attribute>2</attribute>
+    <name>com.forgegames.specialforcesgrowup2</name>
+    <attribute>2</attribute>
+    <name>com.julian.huntingsafari</name>
+    <attribute>2</attribute>
+    <name>com.blockot.worldwar.shooting.game</name>
+    <attribute>2</attribute>
+    <name>com.dsfishlabs.gofmanticore</name>
+    <attribute>2</attribute>
+    <name>com.flaregames.zgs</name>
+    <attribute>2</attribute>
+    <name>com.pixelbite.sm2</name>
+    <attribute>2</attribute>
+    <name>com.outfit7.movingeye.swampattack</name>
+    <attribute>2</attribute>
+    <name>com.gdcompany.metalmadness</name>
+    <attribute>2</attribute>
+    <name>com.ivy.galaxyshooting.sky</name>
+    <attribute>2</attribute>
+    <name>com.blockot.wordwar.shooting.game</name>
+    <attribute>2</attribute>
+    <name>com.blockot.rules.of.modern.worldwar.v2</name>
+    <attribute>2</attribute>
+    <name>com.portbliss.ho71</name>
+    <attribute>2</attribute>
+    <name>com.rockville.terrorist.shooter.fps</name>
+    <attribute>2</attribute>
+    <name>com.h8games.helixjump</name>
+    <attribute>2</attribute>
+    <name>com.game5mobile.popular</name>
+    <attribute>2</attribute>
+    <name>com.playgendary.tom</name>
+    <attribute>2</attribute>
+    <name>com.playgendary.kickthebuddy</name>
+    <attribute>2</attribute>
+    <name>com.gtarcade.lod</name>
+    <attribute>2</attribute>
+    <name>com.klab.bleach</name>
+    <attribute>2</attribute>
+    <name>com.alian.shooter.galaxy.attack</name>
+    <attribute>2</attribute>
+    <name>com.my.hawk.air.shooter</name>
+    <attribute>2</attribute>
+    <name>se.foglo.svt</name>
+    <attribute>2</attribute>
+    <name>com.nextgames.android.ourworld</name>
+    <attribute>2</attribute>
+    <name>com.gameloft.android.ANMP.GloftMVHM</name>
+    <attribute>2</attribute>
+
+    <name>com.ea.gp.fifamobile</name>
+    <attribute>2</attribute>
+    <name>com.ea.games.r3_row</name>
+    <attribute>2</attribute>
+    <name>com.miniclip.eightballpool</name>
+    <attribute>2</attribute>
+    <name>com.ea.game.pvzfree_row</name>
+    <attribute>2</attribute>
+    <name>com.billiards.city.pool.nation.club</name>
+    <attribute>2</attribute>
+    <name>com.playrix.gardenscapes</name>
+    <attribute>2</attribute>
+    <name>com.bushiroad.en.bangdreamgbp</name>
+    <attribute>2</attribute>
+    <name>com.superking.parchisi.star</name>
+    <attribute>2</attribute>
+    <name>com.touchtao.soccerkinggoogle</name>
+    <attribute>2</attribute>
+    <name>com.outfit7.mytalkingtom2</name>
+    <attribute>2</attribute>
+    <name>com.etermax.preguntados.lite</name>
+    <attribute>2</attribute>
+    <name>com.netease.idv_tw.googleplay</name>
+    <attribute>2</attribute>
+    <name>com.netmarble.revolutionthm</name>
+    <attribute>2</attribute>
+    <name>com.pearlabyss.blackdesertm.tw2</name>
+    <attribute>2</attribute>
+    <name>com.randomlogicgames.battletext</name>
+    <attribute>2</attribute>
+    <name>com.miniclip.carrom</name>
+    <attribute>2</attribute>
+    <name>com.netease.mrzhna</name>
+    <attribute>2</attribute>
+    <name>me.pou.app</name>
+    <attribute>2</attribute>
+    <name>com.tebakgambar</name>
+    <attribute>2</attribute>
+    <name>com.dnddream.headsoccer.android</name>
+    <attribute>2</attribute>
+    <name>com.netease.idv.googleplay</name>
+    <attribute>2</attribute>
+    <name>com.miniclip.plagueinc</name>
+    <attribute>2</attribute>
+    <name>com.jsmr.ggplay.htct</name>
+    <attribute>2</attribute>
+    <name>com.twincorp.bancaonline</name>
+    <attribute>2</attribute>
+    <name>vn.kvtm.khuvuontrenmay</name>
+    <attribute>2</attribute>
+    <name>bubbleshooter.orig</name>
+    <attribute>2</attribute>
+    <name>com.bandainamcogames.dbzdokkanww</name>
+    <attribute>2</attribute>
+    <name>mini.block.craft.free.mc</name>
+    <attribute>2</attribute>
+    <name>jpark.AOS5</name>
+    <attribute>2</attribute>
+    <name>com.dimcoms.checkers</name>
+    <attribute>2</attribute>
+    <name>com.teenpatti.hd.gold</name>
+    <attribute>2</attribute>
+    <name>com.nintendo.zaba</name>
+    <attribute>2</attribute>
+    <name>com.kongregate.mobile.bitheroes.google</name>
+    <attribute>2</attribute>
+    <name>com.spotify.music</name>
+    <attribute>2</attribute>
+    <name>com.google.android.music</name>
+    <attribute>2</attribute>
+    <name>com.soundcloud.android</name>
+    <attribute>2</attribute>
+
+    <name>sogou.mobile.explorer</name>
+    <attribute>2</attribute>
+    <name>com.youku.phone</name>
+    <attribute>2</attribute>
+    <name>com.storm.smart</name>
+    <attribute>2</attribute>
+    <name>com.tencent.research.drop</name>
+    <attribute>2</attribute>
+    <name>com.tudou.android</name>
+    <attribute>2</attribute>
+    <name>com.quark.browser</name>
+    <attribute>2</attribute>
+    <name>mark.via</name>
+    <attribute>2</attribute>
+    <name>com.opera.browser</name>
+    <attribute>2</attribute>
+    <name>com.gorgeous.lite</name>
+    <attribute>2</attribute>
+    <name>com.tencent.qgame</name>
+    <attribute>2</attribute>
+    <name>qsbk.app</name>
+    <attribute>2</attribute>
+    <name>org.xianliao</name>
+    <attribute>2</attribute>
+    <name>com.c2vl.kgamebox</name>
+    <attribute>2</attribute>
+    <name>com.xunlei.tdlive</name>
+    <attribute>2</attribute>
+    <name>com.xunlei.downloadprovider</name>
+    <attribute>2</attribute>
+    <name>com.djit.apps.stream</name>
+    <attribute>2</attribute>
+    <name>com.unistudio.drumkendangmania</name>
+    <attribute>2</attribute>
+    <name>br.com.rodrigokolb.realdrum</name>
+    <attribute>2</attribute>
+    <name>com.stupeflix.replay</name>
+    <attribute>2</attribute>
+    <name>com.uc.vmate</name>
+    <attribute>2</attribute>
+    <name>com.zhiliaoapp.musically.go</name>
+    <attribute>2</attribute>
+
+    <name>com.UCMobile:MediaPlayerService</name>
+    <attribute>2</attribute>
+    <name>com.ss.android.ugc.aweme</name>
+    <attribute>2</attribute>
+
+    <name>lyzzr.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.tmgp.NBA</name>
+    <attribute>2</attribute>
+    <name>com.outfit7.mytalkinghank.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.outfit7.talkingtomjetski.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.joym.legendhero.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.ChillyRoom.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.quanmai.pmp.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>np.idreamsky.horizonchase.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.idreamsky.mygarfield.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.ku.lan</name>
+    <attribute>2</attribute>
+    <name>com.tencent.WeFire</name>
+    <attribute>2</attribute>
+    <name>com.roblox.client</name>
+    <attribute>2</attribute>
+    <name>com.gamedevltd.wwh</name>
+    <attribute>2</attribute>
+    <name>com.Nobodyshot.kuboom</name>
+    <attribute>2</attribute>
+    <name>com.soulgame.bear.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.yunbu.bubbleelfsaga.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.supertapx.lovedots.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.duoduo.games.puzzingzoo</name>
+    <attribute>2</attribute>
+    <name>com.kugou.kugouktv</name>
+    <attribute>2</attribute>
+    <name>com.cszzzw.fktzd.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.fengniao.qtdl.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.tencent.huayang</name>
+    <attribute>2</attribute>
+    <name>com.yibasan.lizhifm</name>
+    <attribute>2</attribute>
+    <name>com.cmge.sunpolis.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.coweye.musync.android</name>
+    <attribute>2</attribute>
+    <name>com.wali.ak.nearme.gamecenter</name>
+    <attribute>2</attribute>
+    <name>com.heytap.quicksearchbox</name>
+    <attribute>2</attribute>
+    <name>com.xunlei.cloud</name>
+    <attribute>2</attribute>
+    <name>com.heytap.speechassist</name>
+    <attribute>2</attribute>
+    <name>com.maxmpz.audioplayer</name>
+    <attribute>2</attribute>
+</fast-audio-effects>
+
+<game-dolby-noise>
+    <name>lyzzr.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.tencent.tmgp.NBA</name>
+    <attribute>16000</attribute>
+    <name>com.outfit7.mytalkinghank.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.outfit7.talkingtomjetski.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.joym.legendhero.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.ChillyRoom.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.quanmai.pmp.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>np.idreamsky.horizonchase.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.game.sgz.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.idreamsky.mygarfield.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.ku.lan</name>
+    <attribute>16000</attribute>
+    <name>com.tencent.WeFire</name>
+    <attribute>16000</attribute>
+    <name>com.yinhan.skzh.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.dts.freefireth</name>
+    <attribute>16000</attribute>
+    <name>com.fungames.sniper3d</name>
+    <attribute>16000</attribute>
+    <name>com.roblox.client</name>
+    <attribute>16000</attribute>
+    <name>com.gamedevltd.wwh</name>
+    <attribute>16000</attribute>
+    <name>com.Nobodyshot.kuboom</name>
+    <attribute>16000</attribute>
+    <name>com.feelingtouch.zf3d</name>
+    <attribute>16000</attribute>
+    <name>com.nekki.shadowfight3</name>
+    <attribute>16000</attribute>
+    <name>com.soulgame.bear.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.outfit7.talkingtom2free.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.yunbu.bubbleelfsaga.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.supertapx.lovedots.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.cig.themonsterchef.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.cottongame.isoland2.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.yodo1.OPPO_01.SkiSafari</name>
+    <attribute>16000</attribute>
+    <name>com.galasports.basketball.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.shenghe.wzcq.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.tencent.kof</name>
+    <attribute>16000</attribute>
+    <name>com.huale.justicearrive.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.ball3d.union.keke.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.boxoff.king.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.GF.apcgcncn.hwyad.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>fish.soonyo.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.joym.bearforward.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.qzyx2.union.keke.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.ztgame.bob</name>
+    <attribute>16000</attribute>
+    <name>com.blizzard.wtcg.hearthstone</name>
+    <attribute>16000</attribute>
+    <name>com.netease.ma59.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.ztgame.jl.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.zlongame.fzdl.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.skymoons.hqg.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.kingnet.gundam.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.sy.xljx.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.tencent.woool3d</name>
+    <attribute>16000</attribute>
+    <name>com.tencent.tmgp.ttmj</name>
+    <attribute>16000</attribute>
+    <name>com.wooduan.ssjj.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.hoolai.wdhmzqfy.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.gaea.shanhai.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.hegu.dnl.oppo.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.cmcm.arrowio_cn.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.bairimeng.snake.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>jp.co.hit_point.tabikaeru</name>
+    <attribute>16000</attribute>
+    <name>zombie.survival.craft.z</name>
+    <attribute>16000</attribute>
+    <name>com.joym.xiongdakuaipao</name>
+    <attribute>16000</attribute>
+    <name>com.joym.xiongdakuaipao2018.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.ttx5.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.jedigames.p16s.nearme.gamecenter</name>
+    <attribute>16000</attribute>
+    <name>com.outfit7.mytalkingangelafree</name>
+    <attribute>16000</attribute>
+    <name>com.kabam.marvelbattle</name>
+    <attribute>16000</attribute>
+    <name>com.glu.deerhunt16</name>
+    <attribute>16000</attribute>
+    <name>com.alien.shooter.galaxy.attack</name>
+    <attribute>16000</attribute>
+    <name>com.igg.android.lordsmobile</name>
+    <attribute>16000</attribute>
+</game-dolby-noise>
+
+<game-dirac-noise>
+    <name>com.tencent.tmgp.cf</name>
+    <attribute>16000</attribute>
+
+    <name>com.dts.freefireth</name>
+    <attribute>16000</attribute>
+
+    <name>com.tencent.tmgp.speedmobile</name>
+    <attribute>16000</attribute>
+
+    <name>com.tencent.tmgp.sgame</name>
+    <attribute>16000</attribute>
+</game-dirac-noise>
+
+    <deepbuffer-for-diracgame>
+        <name>com.ss.android.ugc.aweme</name>
+        <attribute>16000</attribute>
+        <name>com.cmplay.tiles2_cn</name>
+        <attribute>0</attribute>
+        <name>com.gamestar.perfectpiano</name>
+        <attribute>0</attribute>
+        <name>com.eyu.piano</name>
+        <attribute>0</attribute>
+        <name>com.tencet.game.rhythmmaster</name>
+        <attribute>0</attribute>
+        <name>com.wedobest.paino.near.gamecenter</name>
+        <attribute>0</attribute>
+        <name>com.wb.gqfk,nearme.gamecenter</name>
+        <attribute>0</attribute>
+        <name>com.lew.gamepianoblock.nearme.gameceter</name>
+        <attribute>0</attribute>
+        <name>com.gangqindaren.nearme.gamecenter</name>
+        <attribute>0</attribute>
+        <name>com.ftaro.music.nearme.gamecenter</name>
+        <attribute>0</attribute>
+        <name>com.coweye.musync.android</name>
+        <attribute>0</attribute>
+        <name>com.yifeng.paino.nearme.gamcenter</name>
+        <attribute>0</attribute>
+        <name>game.piano.black.tiles.music</name>
+        <attribute>0</attribute>
+        <name>com.tencent.qqlive</name>
+        <attribute>0</attribute>
+        <name>com.maxmpz.audioplayer</name>
+        <attribute>0</attribute>
+        <name>fm.xiami.main</name>
+        <attribute>0</attribute>
+        <name>cn.kuwo.player</name>
+        <attribute>0</attribute>
+        <name>cn.banshenggua.aichang</name>
+        <attribute>0</attribute>
+        <name>com.shoujiduoduo.ringtone</name>
+        <attribute>0</attribute>
+        <name>com.blueocean.musicplayer</name>
+        <attribute>0</attribute>
+        <name>com.shoujiduoduo.dj</name>
+        <attribute>0</attribute>
+        <name>com.qiyi.video</name>
+        <attribute>0</attribute>
+    </deepbuffer-for-diracgame>
+
+    <setvoipmode-incall>
+        <name>com.whatsapp</name>
+        <attribute>null</attribute>
+
+        <name>com.google.android.apps.tachyon</name>
+        <attribute>null</attribute>
+
+        <name>com.zing.zalo</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>null</attribute>
+    </setvoipmode-incall>
+
+    <display-notify>
+        <name>com.tencent.mobileqq</name>
+        <attribute>mode</attribute>
+
+        <name>com.tencent.mm</name>
+        <attribute>mode</attribute>
+
+        <name>cn.lcsw.lcpay</name>
+        <attribute>mode</attribute>
+
+        <name>com.soufun</name>
+        <attribute>mode</attribute>
+    </display-notify>
+
+    <oppo-getStreamMaxVolume>
+        <name>com.meTextBook024.touch</name>
+        <attribute>15</attribute>
+
+        <name>com.meTextBook302.touch</name>
+        <attribute>15</attribute>
+
+        <name>com.meTextBook261.touch</name>
+        <attribute>15</attribute>
+
+        <name>com.meTextBook176.touch</name>
+        <attribute>15</attribute>
+    </oppo-getStreamMaxVolume>
+
+    <change-framecount-voice>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+    </change-framecount-voice>
+
+    <not-addplayerbase>
+        <name>com.mahjong.sichuang</name>
+        <attribute>null</attribute>
+
+        <name>com.xianlai.mahjonghn</name>
+        <attribute>null</attribute>
+
+        <name>com.xianlai.mahjongguangxi</name>
+        <attribute>null</attribute>
+
+        <name>com.ixianlai.shanmahjong</name>
+        <attribute>null</attribute>
+
+        <name>com.ixianlai.nxmahjong</name>
+        <attribute>null</attribute>
+
+        <name>com.xianlai.mahjonghnpdk</name>
+        <attribute>null</attribute>
+
+        <name>com.xianlai.mahjongguiyang</name>
+        <attribute>null</attribute>
+
+        <name>com.xianlai.mahjonggd</name>
+        <attribute>null</attribute>
+
+        <name>com.tianfu.majiang</name>
+        <attribute>null</attribute>
+
+        <name>com.xianlai.yunnanmahjong</name>
+        <attribute>null</attribute>
+
+        <name>com.nearme.gamecenter.ddz.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.qileyx.ddz.yyb</name>
+        <attribute>null</attribute>
+
+        <name>com.boyaa.lordland.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.boyaa.kwxmj</name>
+        <attribute>null</attribute>
+
+        <name>com.boyaa.kwxmj.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.pfu.popstar</name>
+        <attribute>null</attribute>
+
+        <name>com.xianlai.mahjonghainan</name>
+        <attribute>null</attribute>
+
+        <name>com.hlbyr.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.zy.org.zyqp.by.nearme.gamecenter</name>
+        <attribute>null</attribute>
+    </not-addplayerbase>
+
+    <game-bt-delay>
+        <name>com.tencent.tmgp.speedmobile</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.pubgmhd</name>
+        <attribute>null</attribute>
+    </game-bt-delay>
+
+    <customscene-record>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+    </customscene-record>
+
+    <tencentsgame-record>
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.pubgmhd</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.ig</name>
+        <attribute>null</attribute>
+
+        <name>com.ngame.allstar.eu</name>
+        <attribute>null</attribute>
+    </tencentsgame-record>
+
+    <game-voice-optimize>
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.apollo</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.apollovoice.apollovoice_demo</name>
+        <attribute>null</attribute>
+    </game-voice-optimize>
+
+    <silent-not-kill>
+        <name>com.codoon.gps</name>
+        <attribute>forbid</attribute>
+
+        <name>com.codoon.gps</name>
+        <attribute>forbid</attribute>
+    </silent-not-kill>
+
+    <not-Silence-Record>
+        <name>com.oppo.ovoicemanager</name>
+        <attribute>1</attribute>
+
+        <name>com.heytap.speechassist</name>
+        <attribute>1</attribute>
+
+        <name>com.tencent.mm</name>
+        <attribute>1</attribute>
+
+        <name>com.coloros.screenrecorder</name>
+        <attribute>1</attribute>
+    </not-Silence-Record>
+
+    <playbackcapture-record-communication>
+        <name>com.tencent.tmgp.pubgmhd</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.cf</name>
+        <attribute>null</attribute>
+
+        <name>com.netease.hyxd.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.cldts</name>
+        <attribute>null</attribute>
+
+        <name>com.qqgame.mic</name>
+        <attribute>null</attribute>
+
+        <name>com.crisisfire.android.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.ddianle.lovedance.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.wali.xmcs.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.speedmobile</name>
+        <attribute>null</attribute>
+
+        <name>com.gbits.atm.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.miHoYo.bh3.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.KiHan</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.shootgame</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.tstl</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.dragonnest</name>
+        <attribute>null</attribute>
+
+        <name>com.miHoYo.bh3.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.wod</name>
+        <attribute>null</attribute>
+
+        <name>com.zlongame.yjqy.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.jxqy</name>
+        <attribute>null</attribute>
+
+        <name>com.netease.dhxy.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.netease.onmyoji.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.wanmei.zhuxian.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.netease.my.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.netease.l10.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.netease.moba.nearme.gamecenter</name>
+        <attribute>null</attribute>
+    </playbackcapture-record-communication>
+
+    <getOppoAtlasService>
+        <name>OnlyForTest</name>
+        <attribute>forbid</attribute>
+    </getOppoAtlasService>
+
+    <silenceCheck-flinger>
+        <name>silenceCheckTimeMs</name>
+        <attribute>45000</attribute>
+    </silenceCheck-flinger>
+
+    <audioserver-out-memory>
+        <name>system_server</name>
+        <attribute>null</attribute>
+    </audioserver-out-memory>
+
+    <car-a2dp-remotesubmix>
+        <name>Ford Ecosport</name>
+        <attribute>null</attribute>
+    </car-a2dp-remotesubmix>
+
+    <dirac-music-ring>
+        <name>com.android.settings</name>
+        <attribute>100000</attribute>
+    </dirac-music-ring>
+
+    <audiorecord-inactive-read>
+        <name>com.instagram.android</name>
+        <attribute>null</attribute>
+    </audiorecord-inactive-read>
+
+    <voice-scence>
+        <name>com.tencent.mm</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+
+        scence=voice_record_mm;
+        sample_rate=16000;
+        channels=1;
+
+        scence=voice_record_mmvideo;
+        sample_rate=44100;
+        channels=1;
+        </attribute>
+
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>
+        scence=voice_playback_tmgp;
+        sample_rate=16000;
+        channels=1;
+
+        scence=voice_record_tmgp;
+        sample_rate=16000;
+        channels=1;
+
+        scence=audio_playback_tmgp;
+        sample_rate=48000|24000|44100;
+        channels=2;
+        </attribute>
+
+        <name>com.tencent.tmgp.pubgmhd</name>
+        <attribute>
+        scence=voice_playback_pubg;
+        sample_rate=16000;
+        channels=1;
+
+        scence=voice_record_pubg;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.tencent.ig</name>
+        <attribute>
+        scence=voice_playback_pubg;
+        sample_rate=16000;
+        channels=1;
+
+        scence=voice_record_pubg;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.tencent.mobileqq</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+
+        scence=voice_record_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.tencent.mobileqq:video</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+
+        scence=voice_record_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.tencent.mobileqq:groupvideo</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+
+        scence=voice_record_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.viber.voip</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.imo.android.imoim</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>im.thebot.messenger</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.skype.rover</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>org.telegram.messenger</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.whatsapp</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.zing.zalo</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>jp.naver.line.android</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.facebook.orca</name>
+        <attribute>
+        scence=voice_playback_mm;
+        sample_rate=16000;
+        channels=1;
+        </attribute>
+
+        <name>com.netease.hyxd</name>
+        <attribute>
+        scence=voice_record_mm;
+        sample_rate=16000;
+        channels=1;
+
+        scence=void_playback_hyxd;
+        sample_rate=44100;
+        channels=1;
+        </attribute>
+
+        <name>com.android.cts.verifier</name>
+        <attribute>
+        scence=voice_record_dynamiceffect;
+        sample_rate=48000;
+        channels=1;
+        </attribute>
+
+        <name>com.sainti.eduread</name>
+        <attribute>
+        scence=voice_record_drop_0;
+        sample_rate=8000;
+        channels=1;
+        </attribute>
+
+        <name>com.ss.android.ugc.aweme</name>
+        <attribute>
+        scence=audio_playback_aweme;
+        sample_rate=48000|24000|44100;
+        channels=2;
+        </attribute>
+    </voice-scence>
+
+    <voip-enhancement>
+        <name>com.tencent.tmgp.pubgmhd</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>null</attribute>
+    </voip-enhancement>
+
+    <oppo-muteStreamVolume>
+        <name>com.coloros.gamedock</name>
+        <attribute>null</attribute>
+
+        <name>com.coloros.gamespaceui</name>
+        <attribute>null</attribute>
+
+        <name>com.oppo.atlas</name>
+        <attribute>null</attribute>
+    </oppo-muteStreamVolume>
+
+    <customApi-setParameters>
+        <name>com.oplus.customize.coreapp</name>
+        <attribute>null</attribute>
+    </customApi-setParameters>
+
+    <audiotrack-force-primary>
+        <name>com.cmcc.cmvideo</name>
+        <attribute>null</attribute>
+    </audiotrack-force-primary>
+
+    <short-sound-frame-change>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.mobileqq</name>
+        <attribute>null</attribute>
+
+        <name>com.android.systemui</name>
+        <attribute>permit</attribute>
+    </short-sound-frame-change>
+
+    <switch-mic-config>
+        <name>com.oppo.camera</name>
+        <attribute>1</attribute>
+
+        <name>com.oneplus.camera</name>
+        <attribute>1</attribute>
+    </switch-mic-config>
+
+    <fast-frame-change>
+        <name>com.kugou.android.support.ktvapp</name>
+        <attribute>4</attribute>
+
+        <name>com.tencent.karaoke</name>
+        <attribute>6</attribute>
+    </fast-frame-change>
+
+    <allowed-input-submix>
+        <name>com.android.dlna.service</name>
+        <attribute>null</attribute>
+
+        <name>com.heytap.cast</name>
+        <attribute>null</attribute>
+    </allowed-input-submix>
+
+    <select-output-effect>
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>0</attribute>
+
+        <name>com.tencent.tmgp.pubgmhd</name>
+        <attribute>0</attribute>
+
+        <name>com.tencent.tmgp.speedmobile</name>
+        <attribute>0</attribute>
+
+        <name>com.netease.hyxd.nearme.gamecenter</name>
+        <attribute>1</attribute>
+
+        <name>com.tencent.tmgp.cf</name>
+        <attribute>1</attribute>
+    </select-output-effect>
+
+    <playback-capture-support>
+        <name>com.coloros.screenrecorder</name>
+        <attribute>null</attribute>
+
+        <name>com.coloros.translate.engine</name>
+        <attribute>null</attribute>
+
+        <name>com.coloros.ocrservice</name>
+        <attribute>null</attribute>
+
+        <name>com.coloros.sharescreen</name>
+        <attribute>null</attribute>
+
+        <name>com.coloros.directui</name>
+        <attribute>null</attribute>
+    </playback-capture-support>
+
+    <no-close-pa>
+        <name>com.coloros.screenrecorder</name>
+        <attribute>null</attribute>
+    </no-close-pa>
+
+    <forbid-effect-volume>
+        <name>com.maxmpz.audioplayer</name>
+        <attribute>null</attribute>
+    </forbid-effect-volume>
+
+    <set-magicvoice-parameters>
+        <name>com.coloros.gamespaceui</name>
+        <attribute>null</attribute>
+    </set-magicvoice-parameters>
+
+    <smart-volume>
+        <name>wechat_db_level</name>
+        <attribute>19</attribute>
+
+        <name>wechat_dynamic_mode</name>
+        <attribute>1</attribute>
+
+        <name>com.tencent.mm</name>
+        <attribute>1</attribute>
+    </smart-volume>
+
+    <start-sco-delay>
+        <name>com.imo.android.imoim</name>
+        <attribute>10</attribute>
+
+        <name>com.facebook.orca</name>
+        <attribute>10</attribute>
+    </start-sco-delay>
+
+    <abort-audioserver>
+        <name>com.ss.android.ugc.aweme</name>
+        <attribute>null</attribute>
+    </abort-audioserver>
+
+    <excep-warning-event>
+        <name>com.oppo.atlas</name>
+        <attribute>8,105</attribute>
+   </excep-warning-event>
+
+   <audio-low-latency>
+        <name>com.tencent.tmgp.pubgmhd</name>
+        <attribute>2</attribute>
+
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>2</attribute>
+
+        <name>com.tencent.tmgp.cf</name>
+        <attribute>2</attribute>
+
+        <name>com.gamestar.perfectpiano</name>
+        <attribute>2</attribute>
+
+        <name>com.superpowered.superpoweredlatency</name>
+        <attribute>2</attribute>
+
+        <name>org.chromium.latency.walt</name>
+        <attribute>2</attribute>
+
+        <name>com.tencent.tmgp.speedmobile</name>
+        <attribute>2</attribute>
+
+        <name>com.netease.mrzh.nearme.gamecenter</name>
+        <attribute>2</attribute>
+
+        <name>com.netease.dwrg.nearme.gamecenter</name>
+        <attribute>2</attribute>
+
+        <name>com.netease.lztg.nearme.gamecenter</name>
+        <attribute>2</attribute>
+
+        <name>com.netease.blqx.nearme.gamecenter</name>
+        <attribute>2</attribute>
+
+        <name>com.miHoYo.bh3.nearme.gamecenter</name>
+        <attribute>2</attribute>
+
+        <name>com.nearme.instant.platform</name>
+        <attribute>2</attribute>
+
+        <name>com.tencent.tmgp.qqx5</name>
+        <attribute>2</attribute>
+
+        <name>com.tencent.tmgp.wuxia</name>
+        <attribute>2</attribute>
+
+        <name>com.netease.sky.nearme.gamecenter</name>
+        <attribute>2</attribute>
+
+        <name>com.tencent.KiHan</name>
+        <attribute>2</attribute>
+
+        <name>com.youzu.bs.nearme.gamecenter</name>
+        <attribute>2</attribute>
+    </audio-low-latency>
+
+    <stop-sco-delay>
+        <name>com.tencent.mm</name>
+        <attribute>20</attribute>
+    </stop-sco-delay>
+
+    <need-judge-whether-sco-on>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.mobileqq</name>
+        <attribute>null</attribute>
+    </need-judge-whether-sco-on>
+
+    <highlight-list>
+        <name>com.coloros.video</name>
+        <attribute>null</attribute>
+
+        <name>com.coloros.gallery3d</name>
+        <attribute>null</attribute>
+    </highlight-list>
+
+    <disable-colorspace>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.androidqqmail</name>
+        <attribute>null</attribute>
+
+        <name>com.qq.qcloud</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.WBlog</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.mobileqq:picture</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.wework</name>
+        <attribute>null</attribute>
+
+        <name>com.mt.mtxx.mtxx</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.mobileqq:imageservice</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.mobileqq:peak</name>
+        <attribute>null</attribute>
+
+        <name>com.coloros.gallery3d</name>
+        <attribute>null</attribute>
+    </disable-colorspace>
+
+    <disable-wcgcolorspace>
+        <name>com.coloros.gallery3d</name>
+        <attribute>null</attribute>
+    </disable-wcgcolorspace>
+
+    <surfaceview-black-list>
+        <name>com.taobao.taobao</name>
+        <attribute>1</attribute>
+
+        <name>com.youku.phone</name>
+        <attribute>1</attribute>
+
+        <name>com.taobao.idlefish</name>
+        <attribute>1</attribute>
+
+        <name>com.taobao.homeai</name>
+        <attribute>1</attribute>
+
+    </surfaceview-black-list>
+
+    <heif-multithread>
+        <name>com.coloros.gallery3d</name>
+        <attribute>null</attribute>
+    </heif-multithread>
+
+    <zenmode>
+        <name>com.tencent.mobileqq</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.mm</name>
+        <attribute>wechat_mute</attribute>
+
+        <name>com.zing.zalo</name>
+        <attribute>null</attribute>
+    </zenmode>
+
+    <ffmpeg-conf>
+        <name>com.tencent.mm</name>
+        <attribute>0.0</attribute>
+        <name>com.cslm.music</name>
+        <attribute>0.0</attribute>
+        <name>com.cdbabyjoy.music</name>
+        <attribute>0.0</attribute>
+        <name>com.coloros.videoeditor</name>
+        <attribute>0.0</attribute>
+        <name>com.google.android.youtube</name>
+        <attribute>0.0</attribute>
+    </ffmpeg-conf>
+
+    <wechat-special-encode>
+        <name>com.tencent.mm</name>
+        <attribute>
+        OMX.MTK.VIDEO.ENCODER.AVC
+        </attribute>
+    </wechat-special-encode>
+
+    <codec-size>
+        <name>com.facebook.orca</name>
+        <attribute>true</attribute>
+    </codec-size>
+
+    <encode-scaling>
+        <name>pola.cam.video.android:ui</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.mobileqq:video</name>
+        <attribute>null</attribute>
+
+        <name>com.instagram.android</name>
+        <attribute>null</attribute>
+
+        <name>my.beautyCamera</name>
+        <attribute>null</attribute>
+
+        <name>com.coloros.video</name>
+        <attribute>null</attribute>
+
+        <name>com.bsb.hike</name>
+        <attribute>null</attribute>
+
+        <name>jp.naver.line.android</name>
+        <attribute>null</attribute>
+
+        <name>cn.soulapp.android</name>
+        <attribute>null</attribute>
+
+        <name>com.facebook.katana</name>
+        <attribute>null</attribute>
+    </encode-scaling>
+
+
+    <png16bit-convert>
+        <name>com.coloros.gallery3d</name>
+        <attribute>null</attribute>
+    </png16bit-convert>
+
+    <record-parameters>
+        <name>com.whatsapp</name>
+        <attribute>null</attribute>
+    </record-parameters>
+
+    <avc-default-proflie>
+        <name>com.hpplay.happycast</name>
+        <attribute>0x01</attribute>
+    </avc-default-proflie>
+
+    <donot-write-flushed>
+        <name>com.zhuawa.carkemusi</name>
+        <attribute>16000</attribute>
+    </donot-write-flushed>
+
+    <muxer-format>
+        <name>org.codeaurora.snapcam</name>
+        <attribute>3gpp</attribute>
+    </muxer-format>
+
+    <disable-jpeg-sampleddecode>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+    </disable-jpeg-sampleddecode>
+
+    <image-processing>
+        <name>com.tencent.mm</name>
+        <attribute>70,95</attribute>
+    </image-processing>
+
+    <disable-thumbnail-retry>
+        <name>com.oppo.camera</name>
+        <attribute>null</attribute>
+    </disable-thumbnail-retry>
+
+    <adjust-negative-audiotime>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+    </adjust-negative-audiotime>
+
+    <delete-fastflag-forP70RKTVapp>
+        <name>com.starmakerinteractive.starmaker</name>
+        <attribute>null</attribute>
+
+        <name>cn.banshenggua.aichang</name>
+        <attribute>null</attribute>
+
+        <name>com.smule.singandroid</name>
+        <attribute>null</attribute>
+    </delete-fastflag-forP70RKTVapp>
+
+    <disable-stop-timeus>
+        <name>com.oppo.camera</name>
+        <attribute>null</attribute>
+    </disable-stop-timeus>
+
+    <sia-param>
+        <name>com.ss.android.ugc.aweme</name>
+        <attribute>null</attribute>
+    </sia-param>
+
+    <allow-fasttrack-create>
+        <name>com.outfit7.mytalkingtomfree</name>
+        <attribute>null</attribute>
+
+        <name>com.imangi.templerun</name>
+        <attribute>null</attribute>
+
+        <name>com.youmusic.magictiles</name>
+        <attribute>null</attribute>
+
+        <name>com.sgn.pandapop.gp</name>
+        <attribute>null</attribute>
+
+        <name>com.joym.legendhero.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.neowizgames.game.browndust.srpg.global</name>
+        <attribute>null</attribute>
+
+        <name>onyuan.chessclubxiangqi.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.time.trigger</name>
+        <attribute>null</attribute>
+
+        <name>com.sbkgames.RacingLimits</name>
+        <attribute>null</attribute>
+
+        <name>com.amanotes.classicalpiano</name>
+        <attribute>null</attribute>
+
+        <name>com.ahqymus2.tt.gg3b</name>
+        <attribute>null</attribute>
+
+        <name>com.ahdxcmusaz.gg4b</name>
+        <attribute>null</attribute>
+
+        <name>com.ahqymus.tt.gg3b</name>
+        <attribute>null</attribute>
+
+        <name>com.ahqymus.jrtt.gg2b2</name>
+        <attribute>null</attribute>
+
+        <name>com.amanotes.db</name>
+        <attribute>null</attribute>
+
+        <name>com.pxllab.pianotiles</name>
+        <attribute>null</attribute>
+
+        <name>com.gs5.auvng</name>
+        <attribute>null</attribute>
+
+        <name>com.amanotes.beathopper</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.dtsmugbbwz</name>
+        <attribute>null</attribute>
+
+        <name>com.tongitsgo.play</name>
+        <attribute>null</attribute>
+
+        <name>com.longyou.changwutuan.global</name>
+        <attribute>null</attribute>
+
+        <name>com.longyou.changwutuan.tg</name>
+        <attribute>null</attribute>
+
+        <name>www.Datian.apk</name>
+        <attribute>null</attribute>
+
+        <name>com.dtszjkhd.nearme.gamecenter</name>
+        <attribute>null</attribute>
+
+        <name>com.zynga.livepoker</name>
+        <attribute>null</attribute>
+    </allow-fasttrack-create>
+
+    <audio-bitrate-control>
+        <name>com.oppo.camera</name>
+        <attribute>320000</attribute>
+    </audio-bitrate-control>
+
+    <disable-stop-timeus>
+        <name>com.oppo.camera</name>
+        <attribute>null</attribute>
+    </disable-stop-timeus>
+
+    <blocking-mic-detecting>
+        <name>com.tencent.mm</name>
+        <attribute>1</attribute>
+    </blocking-mic-detecting>
+
+    <mediaplayer-recycle>
+        <name>cn.swiftpass.enterprise.wft.cmb</name>
+        <attribute>null</attribute>
+
+        <name>cn.swiftpass.enterprise.wft.cmb:live_service</name>
+        <attribute>null</attribute>
+
+        <name>cn.swiftpass.enterprise.hsbank</name>
+        <attribute>null</attribute>
+
+        <name>cn.swiftpass.enterprise.hsbank:live_service</name>
+        <attribute>null</attribute>
+
+        <name>cn.swiftpass.enterprise.v3.fjnx</name>
+        <attribute>null</attribute>
+
+        <name>cn.swiftpass.enterprise.v3.fjnx:live_service</name>
+        <attribute>null</attribute>
+    </mediaplayer-recycle>
+</filter-conf>

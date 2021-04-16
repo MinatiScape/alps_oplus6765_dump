@@ -1,0 +1,729 @@
+#line 1 "device/mediatek/sepolicy/basic/plat_private/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+#allow mtk audio hidl service to read "ro.audio.usb.period_us"
+ro.audio.usb.period_us u:object_r:exported_default_prop:s0 exact int
+
+#allow adb daemon to read "persist.adb.nonblocking_ffs"
+persist.adb.nonblocking_ffs u:object_r:exported_default_prop:s0 exact int
+
+#============system fingerprint property===========
+ro.system.build.fingerprint u:object_r:exported_fingerprint_prop:s0 exact string
+
+vendor.MB.logpost         u:object_r:system_mtk_mobile_log_post_prop:s0
+vendor.MB.logpost.        u:object_r:system_mtk_mobile_log_post_prop:s0
+persist.vendor.MB.logpost u:object_r:system_mtk_mobile_log_post_prop:s0
+
+#=============allow vendor-init/system process access ro.telephony property==============
+ro.telephony.sim.count         u:object_r:exported3_default_prop:s0 exact int
+
+#=============allow netlog==============
+vendor.mtklog         u:object_r:system_mtk_debug_mtklog_prop:s0
+persist.vendor.mtklog u:object_r:system_mtk_persist_mtklog_prop:s0
+vendor.netlog         u:object_r:system_mtk_debug_netlog_prop:s0
+
+#=============allow mdlogger==============
+vendor.mdlogger      u:object_r:system_mtk_debug_mdlogger_prop:s0
+vendor.mdl           u:object_r:system_mtk_mdl_prop:s0
+vendor.starting.mode u:object_r:system_mtk_mdl_start_prop:s0
+persist.vendor.mdl   u:object_r:system_mtk_persist_mdlog_prop:s0
+vendor.pullmdlog     u:object_r:system_mtk_mdl_pulllog_prop:s0
+
+#=============allow AEE==============
+# persist.vendor.mtk.aee.mode && persist.vendor.mtk.aee.dal
+persist.vendor.mtk.aee. u:object_r:system_mtk_persist_mtk_aee_prop:s0
+
+# persist.vendor.aee.core.dump && persist.vendor.aee.core.direct
+persist.vendor.aee. u:object_r:system_mtk_persist_aee_prop:s0
+
+# vendor.debug.mtk.aee.db
+vendor.debug.mtk.aee. u:object_r:system_mtk_debug_mtk_aee_prop:s0
+
+#=============allow AEE_Dumpstate==============
+vendor.debug.bq.dump u:object_r:system_mtk_debug_bq_dump_prop:s0
+
+#=============allow bootanim==============
+persist.vendor.bootanim. u:object_r:system_mtk_bootani_prop:s0
+
+#=============allow mobile log property================
+vendor.MB. u:object_r:system_mtk_mobile_log_prop:s0
+
+#=============allow em to set bgdata disabled property================
+persist.vendor.radio.bgdata.disabled u:object_r:system_mtk_bgdata_disabled_prop:s0
+
+#=============allow em to set gprs attach type property================
+persist.vendor.radio.gprs.attach.type u:object_r:system_mtk_gprs_attach_type_prop:s0
+
+#=============allow em to set poweroffmd property================
+vendor.ril.test.poweroffmd u:object_r:system_mtk_power_off_md_prop:s0
+vendor.ril.testmode        u:object_r:system_mtk_power_off_md_prop:s0
+
+#=============allow sim config property==============
+vendor.gsm.sim.operator.default-name u:object_r:system_mtk_sim_system_prop:s0
+
+#=============allow consyslogger==============
+vendor.connsysfw u:object_r:system_mtk_connsysfw_prop:s0
+
+#=============allow bluetooth==============
+vendor.bthcisnoop u:object_r:system_mtk_vendor_bluetooth_prop:s0
+
+#=============allow radio to set/get xcap rawurl config================
+persist.vendor.mtk.xcap.rawurl u:object_r:system_mtk_persist_xcap_rawurl_prop:s0
+
+#=============allow ccci_mdinit to ctl. mdlogger==============
+ctl.mdlogger   u:object_r:system_mtk_ctl_mdlogger_prop:s0
+ctl.emdlogger1 u:object_r:system_mtk_ctl_emdlogger1_prop:s0
+ctl.emdlogger2 u:object_r:system_mtk_ctl_emdlogger2_prop:s0
+ctl.emdlogger3 u:object_r:system_mtk_ctl_emdlogger3_prop:s0
+
+init.svc.emdlogger1 u:object_r:system_mtk_init_svc_emdlogger1_prop:s0
+init.svc.aee_aedv   u:object_r:system_mtk_init_svc_aee_aedv_prop:s0
+#line 1 "device/mediatek/sepolicy/bsp/plat_private/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+#=============allow atcid==============
+ctl.atcid-daemon-u                    u:object_r:system_mtk_ctl_atcid_daemon_u_prop:s0
+persist.vendor.radio.port_index       u:object_r:system_mtk_atci_sys_prop:s0
+vendor.ril.atci.flightmode            u:object_r:system_mtk_atci_sys_prop:s0
+persist.vendor.service.atci.autostart u:object_r:system_mtk_atci_sys_prop:s0
+persist.vendor.service.atci.usermode  u:object_r:system_mtk_atci_sys_prop:s0
+
+
+#ifdef VENDOR_EDIT
+#Lanlin.Zhou@NETWORK.CALL. phone crash by multi-user, 2020/11/10
+#=============allow capctrl==============
+vendor.ril.capctrl_loaded             u:object_r:system_mtk_capctrl_sys_prop:s0
+#endif /* VENDOR_EDIT */
+
+
+#=============allow mtk aal==============#
+persist.vendor.sys.aal. u:object_r:system_mtk_aal_prop:s0
+
+#============allow permission control set property=========
+vendor.moms.permission.control.policy.set u:object_r:system_mtk_permission_control_prop:s0
+
+#=============allow terservice to set terservice property==============
+persist.vendor.ter u:object_r:system_mtk_terservice_prop:s0
+vendor.ter.service u:object_r:system_mtk_terservice_prop:s0
+
+#=============allow systemui to get ro.vendor.mtk_cta_set===============
+ro.vendor.mtk_cta_set u:object_r:system_mtk_cta_set_prop:s0
+
+#=============allow RSC===============
+ro.sys.current_rsc_path     u:object_r:system_mtk_rsc_sys_prop:s0
+ro.product.current_rsc_path u:object_r:system_mtk_rsc_sys_prop:s0
+ro.sys_ext.current_rsc_path u:object_r:system_mtk_rsc_sys_prop:s0
+
+#=============Restrict access to starting/stopping campostalgo===============
+ctl.start$camerapostalgo   u:object_r:system_mtk_ctl_campostalgo_prop:s0
+ctl.stop$camerapostalgo    u:object_r:system_mtk_ctl_campostalgo_prop:s0
+ctl.restart$camerapostalgo u:object_r:system_mtk_ctl_campostalgo_prop:s0
+
+#=============allow em to set telecom vibrate property================
+persist.vendor.radio.telecom.vibrate u:object_r:system_mtk_telecom_vibrate_prop:s0
+
+#=============allow surfaceflinger get property ============================
+ro.vendor.graphiclowlatency.version u:object_r:system_mtk_graphics_sf_gll_ro_prop:s0
+vendor.debug.sf.                    u:object_r:system_mtk_debug_sf_prop:s0
+vendor.debug.bq.                    u:object_r:system_mtk_debug_bq_prop:s0
+
+#=============allow AudioServer property===========
+vendor.af.mixer.pcm         u:object_r:audio_prop:s0
+vendor.af.track.pcm         u:object_r:audio_prop:s0
+vendor.af.offload.write.raw u:object_r:audio_prop:s0
+vendor.af.resampler.pcm     u:object_r:audio_prop:s0
+vendor.af.mixer.end.pcm     u:object_r:audio_prop:s0
+vendor.af.record.dump.pcm   u:object_r:audio_prop:s0
+vendor.af.effect.pcm        u:object_r:audio_prop:s0
+vendor.af.mixer.drc.pcm     u:object_r:audio_prop:s0
+vendor.af.dumplog           u:object_r:audio_prop:s0
+vendor.aaudio.pcm           u:object_r:audio_prop:s0
+vendor.af.audioflinger.log  u:object_r:audio_prop:s0
+vendor.af.track.log         u:object_r:audio_prop:s0
+vendor.af.policy.debug      u:object_r:audio_prop:s0
+
+#=============CT SelfRegister property================
+persist.vendor.radio.selfreg u:object_r:system_mtk_selfreg_prop:s0
+
+#=============USB tethering property for auto test================
+persist.vendor.net.tethering u:object_r:system_mtk_usb_tethering_prop:s0
+
+#=============allow android log much detect==============
+persist.vendor.logmuch u:object_r:system_mtk_logmuch_prop:s0
+
+#=============allow adb to set entitlement property  ==============
+persist.vendor.entitlement_enabled u:object_r:system_mtk_wfc_entitlement_prop:s0
+persist.vendor.entitlement.sesurl  u:object_r:system_mtk_wfc_entitlement_prop:s0
+persist.vendor.net.wo.epdg_fqdn    u:object_r:system_mtk_wfc_entitlement_prop:s0
+
+#=============allow system_app to get opt-in property  ==============
+persist.vendor.mtk_wfc_opt_in    u:object_r:system_mtk_wfc_opt_in_prop:s0
+persist.vendor.opt-in.url        u:object_r:system_mtk_opt_in_url_prop:s0
+persist.vendor.apptoken.required u:object_r:system_mtk_apptoken_required_prop:s0
+
+#=============allow radio to set common data releated property  ==============
+persist.vendor.radio.default.data.selected u:object_r:system_mtk_common_data_prop:s0
+persist.vendor.radio.mobile.mtu            u:object_r:system_mtk_common_data_prop:s0
+vendor.radio.dsda.state                    u:object_r:system_mtk_common_data_prop:s0
+
+#=============allow carrier express (cxp)==============
+# system_mtk_usp_srv_prop: system set/get
+persist.vendor.operator.optr_1 u:object_r:system_mtk_usp_srv_prop:s0
+persist.vendor.operator.spec_1 u:object_r:system_mtk_usp_srv_prop:s0
+persist.vendor.operator.seg_1  u:object_r:system_mtk_usp_srv_prop:s0
+persist.vendor.mtk_usp         u:object_r:system_mtk_usp_srv_prop:s0
+
+#=============allow system update to set prop=============
+persist.vendor.update_finished u:object_r:system_mtk_update_prop:s0
+persist.vendor.previous_slot   u:object_r:system_mtk_update_prop:s0
+
+#=============allow system_server to set vendor.media.wfd.*==============
+vendor.media.wfd.             u:object_r:system_mtk_media_wfd_prop:s0
+vendor.media.wfd.portrait     u:object_r:system_mtk_media_wfd_prop:s0
+vendor.media.wfd.video-format u:object_r:system_mtk_media_wfd_prop:s0
+
+#=======================allow vsim===========================
+vendor.gsm.disable.sim.dialog u:object_r:system_mtk_vsim_sys_prop:s0
+
+#============= allow supplementary service property ===============
+vendor.gsm.radio.ss.sc                u:object_r:system_mtk_supp_serv_prop:s0
+vendor.gsm.radio.ss.imsdereg          u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.iccid.       u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.change.      u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu_over_ims     u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.sync_for_ota u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.mode         u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.timeslot.    u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.radio.cfu.querytype    u:object_r:system_mtk_supp_serv_prop:s0
+persist.vendor.suppserv.              u:object_r:system_mtk_supp_serv_prop:s0
+vendor.suppserv.                      u:object_r:system_mtk_supp_serv_prop:s0
+
+#============= allow bluetooth to set prop ==============
+vendor.bluetooth.         u:object_r:system_mtk_bluetooth_prop:s0
+persist.vendor.bluetooth. u:object_r:system_mtk_bluetooth_prop:s0
+
+#=============allow EM set tel log property===========
+persist.vendor.log.tel_dbg u:object_r:system_mtk_em_tel_log_prop:s0
+
+#=============allow ims config property===========
+vendor.ril.imsconfig.force.notify u:object_r:system_mtk_imsconfig_prop:s0
+
+#=============allow mtk duraspeed property==============
+persist.vendor.sys.vm.drop_caches u:object_r:system_mtk_duraspeed_drop_caches_prop:s0
+
+#=============allow vendor_init to set ro.vendor.mtk_system_update_support==============
+ro.vendor.mtk_system_update_support u:object_r:system_mtk_update_support_prop:s0
+
+#=============allow AMS dynamic enable log property===========
+persist.vendor.sys.activitylog u:object_r:system_mtk_amslog_prop:s0
+
+#=============allow AMS-aal dynamic enable property===========
+persist.vendor.sys.mtk_app_aal_support u:object_r:system_mtk_amsaal_prop:s0
+
+#=============MTK CDMA Less property===========
+persist.vendor.vzw_device_type u:object_r:system_mtk_persist_vendor_vzw_device_type_prop:s0
+
+#=============allow RTT property==============
+persist.vendor.mtk_rtt_support u:object_r:system_mtk_rtt_prop:s0
+
+#=============CTM property===========
+persist.vendor.ctm_slot_flag u:object_r:system_mtk_ctmslot_prop:s0
+
+#=============MTK UCE property===========
+persist.vendor.mtk_uce_support u:object_r:system_mtk_uce_support_prop:s0
+
+#=============MTK CLIENTAPI property===========
+persist.vendor.mtk_clientapi_support u:object_r:system_mtk_clientapi_support_prop:s0
+
+#=============CDMA property===========
+vendor.cdma.icc.operator.mcc u:object_r:system_mtk_cdma_prop:s0
+
+#=============ECBM property==============
+vendor.ril.cdma.inecmmode_by_slot u:object_r:system_mtk_cdma_ecm_prop:s0
+
+#=============MTK RCS property==============
+persist.vendor.mtk_rcs_support u:object_r:system_mtk_rcs_support_prop:s0
+
+#=============MTK World Phone property===========
+persist.vendor.radio.wm_selectmode u:object_r:system_mtk_world_phone_prop:s0
+persist.vendor.radio.wm_fddtimer   u:object_r:system_mtk_world_phone_prop:s0
+
+#=============MTK Capability Switch property===========
+persist.vendor.radio.unlock           u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.unlock.roaming   u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.wait.imsi        u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.waitimsi.roaming u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.sim.status       u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.new.sim.slot     u:object_r:system_mtk_capability_switch_prop:s0
+vendor.ril.imsi.status.               u:object_r:system_mtk_capability_switch_prop:s0
+persist.vendor.radio.simswitchstate   u:object_r:system_mtk_capability_switch_prop:s0
+
+#=============allow subsidylock==============
+persist.vendor.subsidylock.connectivity_status u:object_r:system_mtk_subsidylock_connect_prop:s0
+persist.vendor.subsidylock u:object_r:system_mtk_subsidylock_prop:s0
+
+#============ACS property==================
+persist.vendor.mtk_acs_version u:object_r:system_mtk_acs_version_prop:s0
+persist.vendor.mtk_acs_support u:object_r:system_mtk_acs_support_prop:s0
+persist.vendor.mtk_acs_url     u:object_r:system_mtk_acs_url_prop:s0
+
+#=============allow Modem Monitor property===========
+persist.vendor.mdmmonitor u:object_r:config_prop:s0
+
+init.svc.mtk_pkm_service u:object_r:system_mtk_pkm_init_prop:s0
+
+#=============MDM init control property==============
+init.svc.md_monitor u:object_r:system_mtk_init_svc_md_monitor_prop:s0
+
+#=============netflix HD property==============
+ro.netflix.bsp_rev u:object_r:netflix_bsp_rev_prop:s0
+
+#============allow ctm set property=========
+service.ctm.slot_flag u:object_r:system_mtk_ctm_prop:s0
+
+#=============allow surfaceflinger to set property for HE2.0 debug tool=============
+vendor.sf.gll.istarget u:object_r:system_mtk_graphics_sf_gll_prop:s0
+vendor.sf.gll.q2l u:object_r:system_mtk_graphics_sf_gll_prop:s0
+vendor.sf.gll.avgl2p u:object_r:system_mtk_graphics_sf_gll_prop:s0
+#line 1 "vendor/oplus/system/sepolicy/private/property_contexts"
+
+# ==============================================
+# OPPO Policy Rule
+# ==============================================
+
+#Jiemin.Zhu@Swdp.Android.SELinux, 2015/11/27, create this file for cherrying pick from external/sepolicy/property_contexts
+
+#ifdef OPLUS_BUG_STABILITY
+#Li.Chen@PSW.CN.BT.Basic.Log.1607918, 2018/10/26, Modify for bt log print
+persist.vendor.bluetooth.fwloglevel u:object_r:exported_bluetooth_prop:s0
+persist.vendor.bluetooth.hostloglevel u:object_r:exported_bluetooth_prop:s0
+#endif /* OPLUS_BUG_STABILITY */
+#ifdef OPLUS_BUG_STABILITY
+#jinhua.Gong@PSW.CN.Basic.1373232, 2018/11/12,
+#Support for Bluetooth Iot Event Report feature
+persist.vendor.bt.iotinfo.report.enable u:object_r:exported_bluetooth_prop:s0
+#endif /* OPLUS_BUG_STABILITY */
+
+#ifdef COLOROS_EDIT
+#Yaohong.Guo@ANDROID.PMS, 2020-04-24, add for allow app set oppo property_service
+# OPPO properties
+oppo.                   u:object_r:exported_system_prop:s0
+oplus.                  u:object_r:exported_system_prop:s0
+#endif COLOROS_EDIT
+
+#ifdef VENDOR_EDIT
+#liangkun@Swdp.shanghai, 2016/02/23, add for restrict sdcardfs prop's permission
+#sdcardfs properties
+sys.sdcardfs.           u:object_r:sdcardfs_prop:s0
+#endif VENDOR_EDIT
+
+#ifdef VENDOR_EDIT
+#Jiemin.Zhu@PSW.AD.SELinux, 2017/10/22, Add for oppo property
+#rom property
+sys.oppo.rom.           u:object_r:oppo_rom_prop:s0
+persist.oppo.rom.       u:object_r:oppo_rom_prop:s0
+ctl.oppo.rom            u:object_r:ctl_rom_prop:s0
+persist.oppo.drag.      u:object_r:exported_system_prop:s0
+
+#android property
+sys.oppo.android.       u:object_r:exported_system_prop:s0
+persist.oppo.android.   u:object_r:exported_system_prop:s0
+ro.oppo.                u:object_r:exported_system_prop:s0
+ro.oplus.               u:object_r:exported_system_prop:s0
+
+#bsp property
+sys.oppo.bsp.           u:object_r:oplus_bsp_prop:s0
+persist.oplus.bsp.       u:object_r:oplus_bsp_prop:s0
+ctl.oplus.bsp            u:object_r:ctl_bsp_prop:s0
+
+#connectivity property
+sys.oppo.cnn.           u:object_r:oppo_cnn_prop:s0
+persist.oppo.cnn.       u:object_r:oppo_cnn_prop:s0
+ctl.oppo.cnn            u:object_r:ctl_cnn_prop:s0
+
+#network property
+#HeZhihui@NETWORK.ARCH.8515, 2020/06/12, add network property
+persist.sys.oplus.radio. u:object_r:oplus_network_prop:s0
+ro.oplus.radio.          u:object_r:oplus_network_prop:s0
+sys.oplus.radio.         u:object_r:oplus_network_prop:s0
+ctl.oplus.radio.         u:object_r:ctl_network_prop:s0
+
+sys.oppo.network.       u:object_r:oplus_network_prop:s0
+ro.oppo.nw.             u:object_r:vendor_oplus_network_prop:s0
+persist.oppo.nw.        u:object_r:vendor_oplus_network_prop:s0
+persist.sys.oem_smooth u:object_r:exported_system_prop:s0
+persist.sys.nw_lab_test u:object_r:exported_system_prop:s0
+persist.sys.cfu_auto u:object_r:exported_system_prop:s0
+persist.sys.nw_mbn_icon u:object_r:exported_system_prop:s0
+sys.oppo.nw.hongbao u:object_r:exported_system_prop:s0
+
+#Xueqian.Zheng@PSW.NW.SIM.1602119,2019/05/08,add for oppo simlock
+persist.oppo.network.   u:object_r:exported_system_radio_prop:s0
+ctl.oppo.network        u:object_r:ctl_network_prop:s0
+#Xiang.Gui@PSW.NW.REG.1143614,2017/11/06, Add for mcc
+#android.telephony.      u:object_r:oplus_network_prop:s0
+#Dingshan.Yang@PSW.NW.REG.1580707,2018/10/11, change for android P policy
+android.telephony.      u:object_r:exported_system_radio_prop:s0
+#Zhengpeng.Tan@PSW.NW.NV.1142070,2017/11/14, Add for serialno
+ro.oppo.network.        u:object_r:oplus_network_prop:s0
+
+#Anhui.Sun@PSW.NW.RF, 2018/10/24, Add for split vendor domain and core domain network property
+core.oppo.network.     u:object_r:core_oplus_network_prop:s0
+
+#ifdef OPLUS_FEATURE_5G
+#YaoHao@NETWORK.REG.2736334,2020/01/16,Add for 5gSupported config
+ro.vendor.oppo.radio.5gSupport  u:object_r:oppo_vendor_prop:s0
+#endif /*OPLUS_FEATURE_5G*/
+
+#camera property
+sys.oppo.camera.        u:object_r:oplus_camera_prop:s0
+persist.oppo.camera.    u:object_r:oplus_camera_prop:s0
+ctl.oppo.camera         u:object_r:ctl_camera_prop:s0
+#ifdef VENDOR_EDIT
+#Ze.Pang@Camera.Drv, 2019/12/12, Modify for testVendorPropertyNamespace of vts
+persist.sys.oppo.displaymetrics        u:object_r:exported_system_prop:s0
+#add by zhuangzebin@camera.driver 20201009,for camera slogan
+oplus.camera.slogan.yuvpath             u:object_r:exported_system_prop:s0
+oppo.camera.packname                   u:object_r:exported_system_prop:s0
+ro.camera.hfr.enable                   u:object_r:exported_default_prop:s0
+ro.camera.videoeis.enable              u:object_r:exported_default_prop:s0
+ro.camera.temperature.limit            u:object_r:exported_default_prop:s0
+#endif /* VENDOR_EDIT */
+
+#BSP property
+persist.report.       u:object_r:oplus_bsp_prop:s0
+
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Bo.Xiang@PSW.Bsp.Sensor , 2019/12/18 add for sensor hal
+sys.oppo.hasPhysicalGyroscope u:object_r:oplus_bsp_sensor_prop:s0
+ro.build.flavor u:object_r:oplus_bsp_sensor_prop:s0
+#endif 
+
+#mashaolong@Apps.InputMethod, 2018/02/02, add for gboard input method
+ro.com.google.ime.       u:object_r:gboard_prop:s0
+
+#ifdef VENDOR_EDIT
+#Yongzhi.Zhang@PSW.MM.AudioDriver.HAL, 2018/10/29,
+#add for setprop persist.vendor.audio.tuning.def_path for audio tunning tool
+audio.tuning.def_path        u:object_r:audio_tunning_prop:s0
+persist.vendor.audio.tuning.def_path        u:object_r:audio_tunning_prop:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef COLOROS_EDIT
+#ChenYong@Plf.Framework, 2018/11/27, add for kernel hotfix
+ctl.oae            u:object_r:ctl_oae_prop:s0
+oae.server.boot    u:object_r:oae_boot_prop:s0
+#endif // COLOROS_EDIT
+
+#ifdef COLOROS_EDIT
+#ChenYong@Plf.Framework, 2018/11/27, modify for odex restrict property to pms
+persist.kevent    u:object_r:oplus_kevents_prop:s0
+#endif /*COLOROS_EDIT*/
+
+#ifdef OPLUS_FEATURE_DEXOPT_STRATEGY
+#Taolicheng@ANDROID.PMS, 2020/09/03, add for collect dex2oat info
+persist.sys.dex2oat     u:object_r:exported_system_prop:s0
+#endif /*OPLUS_FEATURE_DEXOPT_STRATEGY*/
+
+#Jianrong.Zheng@AD.SELinux, 2018/09/27, Add for set partion property type
+ro.sys.reserve.integrate          u:object_r:exported_system_prop:s0
+
+#Jianrong.Zheng@AD.SELinux, 2018/09/27, Add for set otg switch property
+persist.vendor.otg.switch          u:object_r:oppo_otg_switch_prop:s0
+
+#Long.Liu@BSP.Fingerprint.Basic, 2018/12/01, Add for key transfer
+sys.oppo.bsp.key_transfer         u:object_r:oppo_bsp_key_transfer:s0
+
+#ifdef VENDOR_EDIT
+#Qiao.Hu@BSP.CHG.basic, 2019/01/03, Add for charger cmcctest
+ro.vendor.charging_time_limit  u:object_r:oppo_charger_prop:s0
+#endif /*VENDOR_EDIT*/
+
+#ifdef VENDOR_EDIT
+#Qilong.Ao@PSW.AD.OppoDebug.LogKit.1080426, 2019/03/13, Add for audio pcm dump
+vendor.streamin.pcm.dump             u:object_r:exported_system_prop:s0
+vendor.streamin.dsp.dump             u:object_r:exported_system_prop:s0
+vendor.streamout.pcm.dump             u:object_r:exported_system_prop:s0
+vendor.streamout.dsp.dump             u:object_r:exported_system_prop:s0
+persist.vendor.audiohal.aurisys.pcm_dump_on             u:object_r:exported_system_prop:s0
+vendor.streamin.epl.dump             u:object_r:exported_system_prop:s0
+#endif /*VENDOR_EDIT*/
+
+#ifdef VENDOR_EDIT
+#Chunbo.Gao@PSW.AD.OppoDebug.LogKit.BugID, 2019/4/22, Add for awb log
+vendor.debug.camera.dbginfo             u:object_r:exported_system_prop:s0
+vendor.debug.hal3av3.p2result             u:object_r:exported_system_prop:s0
+#endif /*VENDOR_EDIT*/
+
+#ifdef VENDOR_EDIT
+#zhouwei@Cam.Drv 2020/03/20 Add for omedia
+persist.sys.omedia.enable u:object_r:exported_system_prop:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Multi-Media property
+sys.oppo.mm.            u:object_r:exported_system_prop:s0
+persist.oppo.mm.        u:object_r:exported_system_prop:s0
+#Ming.Liu@PSW.MM.AudioDriver, 2017/10/26, Add for audio hal set property
+#Multi-Media property
+#persist.dirac.          u:object_r:exported_system_prop:s0
+#persist.dirac.vendor    u:object_r:oppo_vendor_prop:s0
+#dirac.qem.              u:object_r:exported_system_prop:s0
+persist.sys.record.     u:object_r:exported_system_prop:s0
+#Xianfeng.Fu@PSW.MM.AudioServer, 2017/12/26, Add for AP dirac property
+#dirac.                  u:object_r:exported_system_prop:s0
+#ro.dirac.               u:object_r:exported_system_prop:s0
+#Fenggui.yan@PSW.Tech.MM.MediaServer, 2019/3/14, add for dolby security check
+ro.vendor.dolby.model    u:object_r:oppo_vendor_prop:s0
+ro.vendor.dolby.device   u:object_r:oppo_vendor_prop:s0
+ro.vendor.dolby.manufacturer   u:object_r:oppo_vendor_prop:s0
+ro.vendor.dolby.brand    u:object_r:oppo_vendor_prop:s0
+#ifdef OPLUS_FEATURE_SSR
+#Zhao.Pan@MULTIMEDIA.AUDIODRIVER.FEATURE.SSR, 2020/06/17,add for adsp ramdump
+persist.sys.enable_mtk_adsp_dump     u:object_r:exported_system_prop:s0
+#endif /* OPLUS_FEATURE_SSR */
+#endif /*VENDOR_EDIT*/
+
+#ifdef OPLUS_FEATURE_THEME_FR
+#HongWu.Yang@ANDROID.UIFramework,2019/08/07, add for themeflag selinux
+persist.sys.themeflag      u:object_r:exported_system_prop:s0
+#endif /*OPLUS_FEATURE_THEME_FR*/
+
+#ifdef VENDOR_EDIT
+#Qianyou.Chen@PSW.AD.Performance.1192470, 2018/01/09, Add for improve performance of Top app
+pm.dexopt.core-app u:object_r:exported_pm_prop:s0 exact string
+#endif
+
+#ifdef VENDOR_EDIT
+#xiaodong.ren@CN.GPS.Basic.Location.2674702, 2019/12/13,Add for VTS VtsTrebleSysProp
+ro.oppo.mtk_gps_mpe u:object_r:exported_default_prop:s0
+#endif /*VENDOR_EDIT*/
+
+#ifdef VENDOR_EDIT
+#Xiaomin.Yang@PSW.CN.BT.Basic.Customize.1586031,2018/12/02,
+#Add for updating wcn firmware by sau_res
+persist.sys.firmwarepushtime u:object_r:exported_system_prop:s0
+persist.sys.firmwareupdatetime u:object_r:exported_system_prop:s0
+
+persist.bluetooth.iot.on u:object_r:exported_bluetooth_prop:s0
+persist.bluetooth.dualconnection.supported u:object_r:exported_bluetooth_prop:s0
+
+persist.bluetooth.disableabsvol u:object_r:exported_bluetooth_prop:s0
+persist.bluetooth.avrcpversion u:object_r:exported_bluetooth_prop:s0
+persist.bluetooth.enableinbandringing u:object_r:exported_system_prop:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#weiwei.Deng@CN.NFC.Basic.Hardware.1182186 ,2018/11/11
+#Add for : NFC properties
+persist.nfc.            u:object_r:nfc_prop:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef OPLUS_FEATURE_RINGTONES
+#Xiaokang.Feng@ANDROID.UIFramework ,2018/12/6
+#Add for : ringone properties
+ro.config.notification_sms u:object_r:exported_default_prop:s0
+ro.config.ringtone_sim2 u:object_r:exported_default_prop:s0
+ro.config.notification_sim2 u:object_r:exported_default_prop:s0
+ro.config.calendar_sound u:object_r:exported_default_prop:s0
+#endif /* OPLUS_FEATURE_RINGTONES */
+persist.anr.dumpthr u:object_r:exported_system_prop:s0
+persist.sys.assert.enable u:object_r:exported_system_prop:s0
+persist.sys.assert.panic u:object_r:exported_system_prop:s0
+persist.sys.assert.state u:object_r:exported_system_prop:s0
+persist.sys.assert.enabletip u:object_r:exported_system_prop:s0
+persist.anr.enhancement u:object_r:exported_system_prop:s0
+persist.power.useautobrightadj u:object_r:exported_system_prop:s0
+persist.service.acm.enable u:object_r:exported_system_prop:s0
+persist.sys.disable_rescue u:object_r:exported_system_prop:s0
+persist.sys.mtk.pwkdump u:object_r:exported_system_prop:s0
+persist.sys.oppo.junklog u:object_r:exported_system_prop:s0
+persist.sys.oppo.junkmonitor  u:object_r:exported_system_prop:s0
+persist.sys.oppo.log.config u:object_r:exported_system_prop:s0
+persist.sys.oppo.region u:object_r:exported_system_prop:s0
+persist.sys.oppo.usbactive u:object_r:exported_system_prop:s0
+persist.sys.oppodebug.tpcatcher  u:object_r:exported_system_prop:s0
+persist.version.confidential u:object_r:exported_system_prop:s0
+ro.aee.enforcing u:object_r:exported_default_prop:s0
+ro.bootimage.build.fingerprint u:object_r:exported_default_prop:s0
+ro.build.date u:object_r:exported_default_prop:s0
+ro.build.date.Ymd u:object_r:exported_default_prop:s0
+ro.build.date.ymd u:object_r:exported_default_prop:s0
+ro.build.date.YmdHM u:object_r:exported_default_prop:s0
+ro.build.date.utc u:object_r:exported_default_prop:s0
+ro.build.version.incremental u:object_r:exported_default_prop:s0
+ro.build.product u:object_r:exported_default_prop:s0
+ro.build.version.base_os u:object_r:exported_default_prop:s0
+ro.build.version.ota u:object_r:exported_default_prop:s0
+ro.build.version.opporom u:object_r:exported_default_prop:s0
+ro.build.display.id u:object_r:exported_default_prop:s0
+ro.build.kernel.id u:object_r:exported_default_prop:s0
+ro.build.master.date u:object_r:exported_default_prop:s0
+ro.build.release_type u:object_r:exported_default_prop:s0
+ro.oppo.version u:object_r:exported_default_prop:s0
+ro.mediatek.version.release u:object_r:exported_default_prop:s0
+ro.mount.fs u:object_r:exported_default_prop:s0
+ro.separate.soft u:object_r:exported_default_prop:s0
+ro.rom.featrue u:object_r:exported_default_prop:s0
+ro.product.authentication u:object_r:exported_default_prop:s0
+ro.oppo.market.name u:object_r:exported_default_prop:s0
+ro.product.hw u:object_r:exported_default_prop:s0
+ro.product.sar u:object_r:exported_default_prop:s0
+ro.xxversion u:object_r:exported_default_prop:s0
+ro.product.brand u:object_r:exported_default_prop:s0
+ro.product.model u:object_r:exported_default_prop:s0
+ro.product.device u:object_r:exported_default_prop:s0
+ro.product.name u:object_r:exported_default_prop:s0
+ro.reserve1.get u:object_r:exported_default_prop:s0
+ro.script.version u:object_r:exported_default_prop:s0
+sys.oppo.gift u:object_r:exported_system_prop:s0
+ro.oppo.euex.country  u:object_r:oppo_vendor_prop:s0
+ro.oppo.operator  u:object_r:oppo_vendor_prop:s0
+ro.oppo.regionmark  u:object_r:oppo_vendor_prop:s0
+ro.product.vendor.manufacturer.oppo    u:object_r:oppo_vendor_prop:s0
+ro.product.vendor.model.oppo    u:object_r:oppo_vendor_prop:s0
+ro.product.vendor.brand.oppo    u:object_r:oppo_vendor_prop:s0
+ro.product.vendor.name.oppo    u:object_r:oppo_vendor_prop:s0
+ro.product.vendor.device.oppo    u:object_r:oppo_vendor_prop:s0
+
+#ifdef VENDOR_EDIT
+ro.lcd.backlight.config_boe u:object_r:exported_default_prop:s0
+ro.lcd.backlight.config_truly u:object_r:exported_default_prop:s0
+ro.lcd.backlight.config_tianma u:object_r:exported_default_prop:s0
+ro.lcd.backlight.config_dsjm u:object_r:exported_default_prop:s0
+ro.lcd.backlight.dsjm_himax_a u:object_r:exported_default_prop:s0
+ro.lcd.backlight.config_jdi u:object_r:exported_default_prop:s0
+ro.lcd.backlight.samsung_tenbit u:object_r:exported_default_prop:s0
+
+ro.display.rc.size u:object_r:exported_default_prop:s0
+
+#Zhijun.Ye@PSW.MM.Display.LCD.Stability, 2019/11/27, add for aal hal
+ro.display.aal.special_init_config u:object_r:exported_system_prop:s0
+
+#ZhouYusong@MULTIMEDIA.Display.DRIVER, 2020/12/02, add for cabc level
+ro.vendor.display.cabc_debug_level    u:object_r:oppo_vendor_prop:s0
+#endif
+
+persist.sys.enable.hypnus u:object_r:exported_system_prop:s0
+persist.sys.hypnus. u:object_r:exported_system_prop:s0
+persist.sys.horae. u:object_r:exported_system_prop:s0
+
+#ifdef OPLUS_FEATURE_WIFI_DUMP
+#JiaoBo@CONNECTIVITY.WIFI.BASIC.LOG.1162003, 2018/7/02
+#add for wifi dump related log collection and DCS handle, dynamic enable/disable wifi core dump, offer trigger wifi dump API.
+sys.oplus.wifi.dump.mode u:object_r:exported_system_prop:s0
+sys.oplus.wifi.dump.enable u:object_r:exported_system_prop:s0
+sys.oplus.wifi.dump.trigger u:object_r:exported_system_prop:s0
+sys.oplus.wifi.dump.logcollect u:object_r:exported_system_prop:s0
+sys.oplus.wifi.dump.nameheader u:object_r:exported_system_prop:s0
+sys.oplus.wifi.dump.needupload u:object_r:exported_system_prop:s0
+sys.oplus.wifi.dump.failureDesc u:object_r:exported_system_prop:s0
+sys.oplus.wlan.sar_idx u:object_r:exported_system_prop:s0
+#endif  /* OPLUS_FEATURE_WIFI_DUMP */
+
+#ifdef OPLUS_FEATURE_WIFI_RUSUPGRADE
+#JiaoBo@CONNECTIVITY.WIFI.BASIC.HARDWARE.2795386, 2020/02/20
+#add for: support auto update function, include mtk fw, mtk wifi.cfg, qcom fw, qcom bdf, qcom ini
+sys.oplus.wifi.rus.upgrade.ctl u:object_r:exported_system_prop:s0
+sys.oplus.wifi.rus.objs.type u:object_r:exported_system_prop:s0
+sys.oplus.wifi.rus.objs.upgrade.status u:object_r:exported_system_prop:s0
+#endif  /* OPLUS_FEATURE_WIFI_RUSUPGRADE */
+
+#ifdef OPLUS_FEATURE_WIFI_SWITCH
+#JiaoBo@CONNECTIVITY.WIFI.BASIC.SWITCH.1069763, 2020/02/20
+#add for: collect wifi switch log
+sys.oplus.wifi.switch.log.ctl u:object_r:exported_system_prop:s0
+sys.oplus.wifi.switch.log.fid u:object_r:exported_system_prop:s0
+sys.oplus.wifi.switch.log.reason u:object_r:exported_system_prop:s0
+#endif  /* OPLUS_FEATURE_WIFI_SWITCH */
+
+#ifdef OPLUS_FEATURE_ENGINEERTOOLS
+vendor.oppo.eng.nonsignal         u:object_r:engineer_system_prop:s0
+vendor.oppo.engineermode.chargeswitch       u:object_r:exported_system_prop:s0
+vendor.oppo.quit.atm        u:object_r:engineer_system_prop:s0
+vendor.oppo.vulkan.switch       u:object_r:exported_system_prop:s0
+vendor.oppo.engineer.usb.config        u:object_r:system_radio_prop:s0
+#endif
+
+#ifdef OPLUS_FEATURE_SSR
+#Yongpei.Yao@MULTIMEDIA.AUDIODRIVER.SSR, 2020/04/01, Add for adsp/venus SSR dump
+persist.sys.enable_venus_dump  u:object_r:exported_system_prop:s0
+persist.sys.enable_adsp_dump  u:object_r:exported_system_prop:s0
+#endif /* OPLUS_FEATURE_SSR */
+persist.vendor.ssr.enable_ramdumps u:object_r:system_prop:s0
+
+#ifdef OPLUS_FEATURE_SYSTEM_CONFIG
+#LiLeYang@ANDROID.CUSTOMIZE,2020/05/27, Add for oplus feature cache
+cache_key.has_feature_memory              u:object_r:binder_cache_system_server_prop:s0
+cache_key.has_feature_persist             u:object_r:binder_cache_system_server_prop:s0
+cache_key.has_feature_readonly            u:object_r:binder_cache_system_server_prop:s0
+#endif OPLUS_FEATURE_SYSTEM_CONFIG
+
+#ifdef OPLUS_FEATURE_THEIA
+#linzhangru@PSW 20191113, add for Theia logdump
+dbg.tia.dumping    u:object_r:dumpstate_prop:s0
+#endif /*OPLUS_FEATURE_THEIA*/
+
+gf.debug.dump_data       u:object_r:oppo_fingerprint_prop:s0
+gf.debug.dump_talog_data u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.iconlocation u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.iconsize u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.iconnumber u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.support u:object_r:oppo_fingerprint_prop:s0
+vendor.fingerprint.optical.goodix.hal.retry u:object_r:oppo_fingerprint_prop:s0
+vendor.fingerprint.optical.goodix.ta.retry u:object_r:oppo_fingerprint_prop:s0
+oppo.fingerprint.factory u:object_r:oppo_fingerprint_prop:s0
+oppo.fingerprint.qrcode.support u:object_r:oppo_fingerprint_prop:s0
+oppo.fingerprint.qrcode.value u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.goodix.reboot.times u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.silead_newalgo.support u:object_r:oppo_fingerprint_prop:s0
+oppo.fingerprint.gf.package.version u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.sensorlocation u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.lcdtype u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.sensorrotation u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.fp_id u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.sensor_type u:object_r:oppo_fingerprint_prop:s0
+vendor.fingerprint.cali u:object_r:oppo_fingerprint_prop:s0
+oppo.fingerprint.algo.version u:object_r:oppo_fingerprint_prop:s0
+persist.vendor.fingerprint.optical.circlenumber u:object_r:oppo_fingerprint_prop:s0
+#ifdef OPLUS_FEATURE_SECURITY_COMMON
+#Dongnan.Wu@BSP.Security.Basic, add for get rpmb enable state
+persist.vendor.rpmb.enable.state u:object_r:oplus_rpmb_enable_state_prop:s0
+#endif /* OPLUS_FEATURE_SECURITY_COMMON */
+
+#ZhangJunhui@GAMEECO.COOLEFFECT.COOLEX,2020/08/07, Add for CoolEx
+vendor.oplus.jedi.stats.      u:object_r:exported_system_prop:s0
+vendor.oplus.jedi.thread.     u:object_r:exported_system_prop:s0
+vendor.oplus.coolex.effect    u:object_r:exported_system_prop:s0
+vendor.oplus.coolex.effect.   u:object_r:exported_system_prop:s0
+vendor.oplus.coolex.          u:object_r:exported_system_prop:s0
+vendor.oplus.jedi.            u:object_r:exported_system_prop:s0
+#endif /* OPLUS_FEATURE_GAMEECO_COOLEFFECT */
+
+
+#ifdef OPLUS_FEATURE_HANS_FREEZE
+#Mengya.Zhao@@ANDROID.RESCONTROL, 2019/11/11, add for hans freeze manager
+persist.vendor.enable.hans u:object_r:exported_system_prop:s0
+#endif /* OPLUS_FEATURE_HANS_FREEZE */
+
+#ifdef OPLUS_FEATURE_RES_PRELOAD
+#chao.zhu@ANDROID.RESCONTROL, 2019/04/13, add for Resource Preload Manager
+persist.vendor.enable.preload u:object_r:exported_system_prop:s0
+#endif /* OPLUS_FEATURE_RES_PRELOAD */
+
+#ifdef OPLUS_FEATURE_CAMERA_COMMON
+#Caohua.Lin@Camera, 20181225, Skip raw input format check for whitelisted apps
+persist.vendor.camera.privapp.list        u:object_r:exported_system_prop:s0
+#endif /*OPLUS_FEATURE_CAMERA_COMMON*/
+
+#ifdef OPLUS_FEATURE_VFX_SCREENEFFECT
+#WangKaiWen@MULTIMEDIA.Display.VFX, 2020/08/04, Add for vfx scrren effect
+persist.vendor.vfx.screeneffect    u:object_r:exported_system_prop:s0
+persist.vendor.vfx.screeneffect.pro    u:object_r:exported_system_prop:s0
+#endif /* OPLUS_FEATURE_VFX_SCREENEFFECT */

@@ -1,0 +1,4 @@
+service replace_splash_logo /system_ext/bin/do_replace_splash_logo.sh
+    class core
+    seclabel u:r:replace_splash_logo:s0
+    oneshot
